@@ -1,0 +1,1 @@
+return run scoreboard players get $dark_real_time_clock.config dark_real_time_clock.display
