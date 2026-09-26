@@ -1,0 +1,1 @@
+scoreboard players add $dark_civilization.config dark_civilization.town_core_id 1

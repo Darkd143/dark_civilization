@@ -1,0 +1,7 @@
+{
+    "values":[
+        "dark_player:load",
+        "dark_chunk_manager:load",
+        "dark_civilization:load"
+    ]
+}
