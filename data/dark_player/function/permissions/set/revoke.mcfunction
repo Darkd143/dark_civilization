@@ -1,1 +1,0 @@
-scoreboard players reset @s dark_player.permission_level
