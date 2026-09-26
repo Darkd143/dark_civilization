@@ -18,7 +18,7 @@ execute if score $dark_real_time_clock.clock dark_real_time_clock.seconds matche
 execute unless score $dark_real_time_clock.clock dark_real_time_clock.seconds matches 0..9 run data modify storage dark_clock display.seconds_prepend set value ""
 
 # display
-function dark_real_time_clock:clock/display/display with storage dark_clock
+function dark_real_time_clock:clock/display/display with storage dark_clock.display
 
 # remove storage
 data remove storage dark_clock display
