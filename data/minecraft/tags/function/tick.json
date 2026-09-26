@@ -1,7 +1,9 @@
 {
     "values":[
         "dark_player:tick",
+        "dark_real_time_clock:tick",
         "dark_chunk_manager:tick",
+        "dark_economy:tick",
         "dark_civilization:tick"
     ]
 }
