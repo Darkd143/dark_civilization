@@ -1,2 +1,2 @@
 # dark_civilization
-Adds advanced civilization functionality for survival mode cooperative and economic server gameplay
+This Minecraft Datapack adds advanced civilization functionality for survival mode cooperative and economic server gameplay.
