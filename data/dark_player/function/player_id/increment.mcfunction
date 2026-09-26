@@ -1,0 +1,1 @@
+scoreboard players add $dark_player.config dark_player.player_id 1

@@ -1,0 +1,7 @@
+{
+    "values":[
+        "dark_player:tick",
+        "dark_chunk_manager:tick",
+        "dark_civilization:tick"
+    ]
+}

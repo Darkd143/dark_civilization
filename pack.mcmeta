@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": "Adds advanced civilization functionality for survival mode cooperative and economic server gameplay",
+    "pack_format": 121,
+    "min_format": 121,
+    "max_format": 121
+  }
+}
