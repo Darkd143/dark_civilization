@@ -1,0 +1,2 @@
+function dark_real_time_clock:triggers/change_active/reset
+scoreboard players enable @s dark_real_time_clock.change_active

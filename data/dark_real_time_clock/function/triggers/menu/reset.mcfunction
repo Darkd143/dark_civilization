@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_real_time_clock.menu

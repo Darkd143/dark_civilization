@@ -1,0 +1,2 @@
+function dark_real_time_clock:triggers/set_day/reset
+scoreboard players enable @s dark_real_time_clock.set_day

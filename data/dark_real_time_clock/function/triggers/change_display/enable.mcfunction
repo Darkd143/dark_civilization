@@ -1,0 +1,2 @@
+function dark_real_time_clock:triggers/change_display/reset
+scoreboard players enable @s dark_real_time_clock.change_display

@@ -1,0 +1,2 @@
+execute if score $dark_real_time_clock.config dark_real_time_clock.display matches 3.. run return run function dark_real_time_clock:triggers/change_display/toggle/disable
+function dark_real_time_clock:triggers/change_display/toggle/change

@@ -1,0 +1,2 @@
+scoreboard players set $dark_real_time_clock.config dark_real_time_clock.display 0
+function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Real Time Clock",message:"Hour Stopwatch display has been deactivated."}

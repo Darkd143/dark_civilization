@@ -10,5 +10,13 @@ scoreboard objectives add dark_real_time_clock.temp dummy
 scoreboard objectives add dark_real_time_clock.increment dummy
 scoreboard objectives add dark_real_time_clock.display dummy
 
+# triggers
+scoreboard objectives add dark_real_time_clock.menu trigger
+scoreboard objectives add dark_real_time_clock.change_active trigger
+scoreboard objectives add dark_real_time_clock.change_display trigger
+scoreboard objectives add dark_real_time_clock.set_hour trigger
+scoreboard objectives add dark_real_time_clock.set_day trigger
+scoreboard objectives add dark_real_time_clock.set_week trigger
+
 # initial setup
 function dark_real_time_clock:clock/config/setup
