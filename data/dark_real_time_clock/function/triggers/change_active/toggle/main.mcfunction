@@ -1,0 +1,2 @@
+execute if function dark_real_time_clock:clock/helper/clock_is_active run return run function dark_real_time_clock:triggers/change_active/toggle/deactivate
+function dark_real_time_clock:triggers/change_active/toggle/activate

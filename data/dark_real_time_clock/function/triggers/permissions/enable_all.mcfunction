@@ -1,0 +1,6 @@
+function dark_real_time_clock:triggers/change_active/enable
+function dark_real_time_clock:triggers/change_display/enable
+function dark_real_time_clock:triggers/menu/enable
+function dark_real_time_clock:triggers/set_day/enable
+function dark_real_time_clock:triggers/set_hour/enable
+function dark_real_time_clock:triggers/set_week/enable
