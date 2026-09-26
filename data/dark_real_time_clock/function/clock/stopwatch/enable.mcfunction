@@ -1,0 +1,2 @@
+scoreboard players set $dark_player.config dark_real_time_clock.increment 1
+function dark_real_time_clock:clock/stopwatch/create_stopwatch

@@ -1,7 +1,9 @@
 {
     "values":[
         "dark_player:load",
+        "dark_real_time_clock:load",
         "dark_chunk_manager:load",
+        "dark_economy:load",
         "dark_civilization:load"
     ]
 }
