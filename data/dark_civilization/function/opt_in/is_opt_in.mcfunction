@@ -1,2 +1,2 @@
-execute if entity @s[tag=dark_player.opt_in] run return 1
+execute if entity @s[tag=dark_civilization.opt_in] run return 1
 return 0
