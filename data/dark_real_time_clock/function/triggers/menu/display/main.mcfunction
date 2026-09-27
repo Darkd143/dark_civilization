@@ -1,5 +1,5 @@
 # Set up storage
-data merge storage dialog_temp {title:"Dark Real Time Clock - Operator Config",actions:[],"exit_action":{"label":"Back","tooltip":"Back to Operator Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_player.operator_menu set 1"}}}
+data merge storage dialog_temp {title:"Dark Real Time Clock - Operator Config",actions:[],"exit_action":{"label":"Back","tooltip":"Back to Operator Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_player.operator_menu set 1"}},columns:1}
 
 execute if function dark_real_time_clock:clock/helper/clock_is_active run data merge storage temp {clock_status:"Active",clock_action_status:"Deactivate"}
 execute unless function dark_real_time_clock:clock/helper/clock_is_active run data merge storage temp {clock_status:"Inactive",clock_action_status:"Activate"}
@@ -28,3 +28,5 @@ function dark_player:utils/dialog/actions with storage dialog_temp
 # Remove Storage
 data remove storage dialog_temp actions
 data remove storage dialog_temp title
+data remove storage dialog_temp exit_action
+data remove storage dialog_temp columns
