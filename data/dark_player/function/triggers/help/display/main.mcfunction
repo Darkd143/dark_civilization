@@ -6,7 +6,7 @@ data merge storage dialog_temp {"title":"Help Menu - List of triggers",body:[{ \
 
 execute if entity @s[tag=dark_player.dp_op] run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
-      "contents": [{"text":"● ","color":"white"},{"text":"dark_player.op_menu","color":"green","click_event":{"action":"run_command","command":"/trigger dark_player.help"}},{"text":" - display the operator menu"}] \
+      "contents": [{"text":"● ","color":"white"},{"text":"dark_player.op_menu","color":"green","click_event":{"action":"run_command","command":"/trigger dark_player.op_menu"}},{"text":" - display the operator menu"}] \
     }
 
 # display dialog
