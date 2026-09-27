@@ -4,5 +4,7 @@ execute unless function dark_player:permissions/has_dp_op run return run functio
 # Toggle
 function dark_real_time_clock:triggers/change_display/toggle/main
 
+execute if score @s dark_real_time_clock.change_display matches 2 run function dark_real_time_clock:triggers/menu/display/main
+
 # Enable Trigger
 function dark_real_time_clock:triggers/change_display/enable

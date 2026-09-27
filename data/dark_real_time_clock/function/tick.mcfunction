@@ -1,4 +1,5 @@
-# Triggers TODO
+# Triggers
+function dark_real_time_clock:triggers/manage/check
 
 # Check Stopwatch
 execute if function dark_real_time_clock:clock/helper/clock_is_active run function dark_real_time_clock:clock/stopwatch/check
