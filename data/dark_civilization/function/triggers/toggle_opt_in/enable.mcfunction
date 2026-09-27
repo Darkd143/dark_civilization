@@ -1,0 +1,2 @@
+function dark_civilization:triggers/toggle_opt_in/reset
+scoreboard players enable @s dark_civilization.toggle_opt_in
