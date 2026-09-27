@@ -11,7 +11,7 @@ $data modify storage dialog_temp actions append value { \
       "tooltip": "Click to $(clock_action_status)", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.change_active set 2" \
+        "command": "/trigger dark_real_time_clock.change_active set 1" \
       } \
     }
 
@@ -20,7 +20,7 @@ $data modify storage dialog_temp actions append value { \
       "tooltip": "Click to toggle", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.change_display set 2" \
+        "command": "/trigger dark_real_time_clock.change_display set 1" \
       } \
     }
 
