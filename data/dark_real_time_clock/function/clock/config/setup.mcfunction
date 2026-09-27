@@ -20,11 +20,3 @@ execute unless score $dark_real_time_clock.clock dark_real_time_clock.hours matc
 execute unless score $dark_real_time_clock.clock dark_real_time_clock.days matches 0.. run scoreboard players set $dark_real_time_clock.clock dark_real_time_clock.days 0
 
 execute unless score $dark_real_time_clock.clock dark_real_time_clock.weeks matches 0.. run scoreboard players set $dark_real_time_clock.clock dark_real_time_clock.weeks 0
-
-# setup events
-
-execute unless score $dark_real_time_clock.events dark_real_time_clock.hours matches 0..1 run scoreboard players set $dark_real_time_clock.events dark_real_time_clock.hours 1
-
-execute unless score $dark_real_time_clock.events dark_real_time_clock.days matches 0..1 run scoreboard players set $dark_real_time_clock.events dark_real_time_clock.days 1
-
-execute unless score $dark_real_time_clock.events dark_real_time_clock.weeks matches 0..1 run scoreboard players set $dark_real_time_clock.events dark_real_time_clock.weeks 1

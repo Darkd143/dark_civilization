@@ -1,2 +1,2 @@
-scoreboard players set $dark_player.config dark_real_time_clock.increment 0
+scoreboard players set $dark_real_time_clock.config dark_real_time_clock.increment 0
 function dark_real_time_clock:clock/stopwatch/remove_stopwatch

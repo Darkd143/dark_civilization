@@ -8,10 +8,3 @@ scoreboard players operation $dark_real_time_clock.clock dark_real_time_clock.mi
 
 # Finish Seconds
 scoreboard players operation $dark_real_time_clock.clock dark_real_time_clock.seconds %= $dark_real_time_clock.clock dark_real_time_clock.temp
-
-# Hours
-scoreboard players operation $dark_real_time_clock.clock dark_real_time_clock.hours = $dark_real_time_clock.clock dark_real_time_clock.minutes
-scoreboard players operation $dark_real_time_clock.clock dark_real_time_clock.hours /= $dark_real_time_clock.clock dark_real_time_clock.temp
-
-# Finish Minutes
-scoreboard players operation $dark_real_time_clock.clock dark_real_time_clock.minutes %= $dark_real_time_clock.clock dark_real_time_clock.temp
