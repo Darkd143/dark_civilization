@@ -29,7 +29,7 @@ $data modify storage dialog_temp actions append value { \
       "tooltip": "Click to set the hour", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.set_hour set -1" \
+        "command": "/trigger dark_real_time_clock.set_hour set -2" \
       } \
     }
 
@@ -38,7 +38,7 @@ $data modify storage dialog_temp actions append value { \
       "tooltip": "Click to set the day", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.set_day set -1" \
+        "command": "/trigger dark_real_time_clock.set_day set -2" \
       } \
     }
 
@@ -47,6 +47,6 @@ $data modify storage dialog_temp actions append value { \
       "tooltip": "Click to set the week", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.set_week set -1" \
+        "command": "/trigger dark_real_time_clock.set_week set -2" \
       } \
     }

@@ -4,7 +4,7 @@ data merge storage dialog_temp {title:"Dark Real Time Clock - Set Day","exit_act
       "tooltip": "Click to set the day count to 0", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.set_days set -1" \
+        "command": "/trigger dark_real_time_clock.set_day set -1" \
       } \
     }, \
     { \
@@ -12,15 +12,16 @@ data merge storage dialog_temp {title:"Dark Real Time Clock - Set Day","exit_act
       "tooltip": "Click to save the day count", \
       "action": { \
         "type": "minecraft:dynamic/run_command", \
-        "template": "/trigger dark_real_time_clock.set_days set $(new_days)", \
+        "template": "/trigger dark_real_time_clock.set_day set $(new_days)", \
       } \
     } \
 ]}
 
 execute store result storage dialog_temp initial int 1 run scoreboard players get $dark_real_time_clock.clock dark_real_time_clock.days
+execute if score $dark_real_time_clock.clock dark_real_time_clock.days matches 0 run data modify storage dialog_temp initial set value 1
 
 # Display Dialog
-function dark_player:utils/dialog/actions with storage dialog_temp
+function dark_player:utils/dialog/int_input with storage dialog_temp
 
 # Remove Storage
 data remove storage dialog_temp actions
