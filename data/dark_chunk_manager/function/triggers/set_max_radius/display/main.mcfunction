@@ -1,10 +1,10 @@
 # Set up storage
-data merge storage dialog_temp {title:"Dark Chunk Loader - Set Max Radius","exit_action":{"label":"Back","tooltip":"Back to Worldborder Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_chunk_manager.menu set -1"}},message:"Change the max radius using the slider and then save.",key:"new_max_radius",input_label:"change max radius",start:16,end:16384,step:16,columns:1,actions:[{ \
+data merge storage dialog_temp {title:"Dark Chunk Loader - Set Max Radius","exit_action":{"label":"Back","tooltip":"Back to Worldborder Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_chunk_manager.worldborder_menu set -1"}},message:"Change the max radius using the slider and then save.",key:"new_max_radius",input_label:"change max radius",start:16,end:16384,step:16,columns:1,actions:[{ \
       "label": "Save", \
       "tooltip": "Click to save the max radius", \
       "action": { \
         "type": "minecraft:dynamic/run_command", \
-        "template": "/trigger dark_real_time_clock.set_day set $(new_max_radius)", \
+        "template": "/trigger dark_chunk_manager.set_max_radius set $(new_max_radius)", \
       } \
     } \
 ]}
