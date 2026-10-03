@@ -1,1 +1,2 @@
 function dark_player:player_id/assign
+function dark_player:logging_in/first_time_login/main

@@ -1,0 +1,2 @@
+function dark_economy:money/login_bonus/message/store_login_bonus_type
+function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Economy",message:"{'text':'Welcome Back! Click to ',color:'white'},{'text':'[claim]','click_event':{'action':'run_command','command':'/trigger dark_civilization.toggle_opt_in'},color:'green'},{text:' your ',color:'white'},{storage:'temp',nbt:'type_string',color:'white'},{text:' login bonus.',color:'white'}"}
