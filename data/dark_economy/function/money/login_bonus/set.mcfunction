@@ -4,4 +4,5 @@
 
 $execute store result score @s dark_economy.login_bonus run data get storage dark_economy.config login_bonus.$(type_string)
 $scoreboard players set @s dark_economy.login_bonus_type $(type)
-function dark_economy:money/login_bonus/message/new
+execute unless score @s dark_economy.login_bonus_type matches 1 run function dark_economy:money/login_bonus/message/new
+execute if score @s dark_economy.login_bonus_type matches 1 run function dark_economy:money/login_bonus/message/first_time

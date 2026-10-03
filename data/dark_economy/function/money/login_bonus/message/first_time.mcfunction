@@ -1,0 +1,2 @@
+function dark_economy:money/login_bonus/message/store_login_bonus_type
+function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Economy",message:"{'text':'Thanks for opting in! Click to ',color:'white'},{'text':'[claim]','click_event':{'action':'run_command','command':'/trigger dark_economy.claim_login_bonus'},color:'green'},{text:' your ',color:'white'},{storage:'temp',nbt:'type_string',color:'white',interpret:true},{text:' login bonus.',color:'white'}"}
