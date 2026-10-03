@@ -1,0 +1,2 @@
+function dark_economy:triggers/menu/enable
+function dark_economy:triggers/display_money/enable

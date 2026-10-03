@@ -1,0 +1,1 @@
+title @s actionbar [{"text":"💰 $"},{"score":{"name":"@s","objective":"dark_economy.money"}}]

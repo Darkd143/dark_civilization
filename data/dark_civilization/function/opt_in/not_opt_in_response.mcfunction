@@ -1,0 +1,1 @@
+function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Economy",message:"{'text':'You cannot access this feature if you are not ',color:'red'},{'text':'[opt-in]','click_event':{'action':'run_command','command':'/trigger dark_civilization.toggle_opt_in'},color:'green'},{text:'.',color:'red'}"}
