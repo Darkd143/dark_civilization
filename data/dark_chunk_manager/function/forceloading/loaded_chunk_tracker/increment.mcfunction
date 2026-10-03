@@ -1,0 +1,1 @@
+scoreboard players add $dark_chunk_manager.config dark_chunk_manager.loaded_chunks 1
