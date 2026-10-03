@@ -25,7 +25,7 @@ execute if function dark_civilization:opt_in/is_opt_in run data modify storage d
 # Display Money
 execute if function dark_civilization:opt_in/is_opt_in run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
-      "contents": [{"text":"● ","color":"white"},{"text":"dark_player.player_menu","color":"green","click_event":{"action":"run_command","command":"/trigger dark_economy.player_menu"}},{"text":" - open the player menu"}] \
+      "contents": [{"text":"● ","color":"white"},{"text":"dark_player.player_menu","color":"green","click_event":{"action":"run_command","command":"/trigger dark_player.player_menu"}},{"text":" - open the player menu"}] \
     }
 
 # display dialog
