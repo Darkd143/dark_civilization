@@ -4,7 +4,7 @@ data merge storage dialog_temp {title:"Dark Chunk Loader - Set Current Worldbord
       "tooltip": "Click to save the current worldborder stages", \
       "action": { \
         "type": "minecraft:dynamic/run_command", \
-        "template": "/trigger dark_chunk_manager.set_worldborder_stage set $(new_current_worldborder_stage)", \
+        "template": "/trigger dark_chunk_manager.set_current_worldborder_stage set $(new_current_worldborder_stage)", \
       } \
     } \
 ]}
