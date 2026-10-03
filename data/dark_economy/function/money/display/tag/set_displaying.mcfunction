@@ -1,0 +1,1 @@
+tag @s add dark_economy.displaying_money

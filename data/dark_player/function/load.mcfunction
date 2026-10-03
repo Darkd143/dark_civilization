@@ -4,6 +4,7 @@ scoreboard objectives add dark_player.left_game minecraft.custom:minecraft.leave
 
 # triggers
 scoreboard objectives add dark_player.help trigger
+scoreboard objectives add dark_player.player_menu trigger
 scoreboard objectives add dark_player.op_menu trigger
 
 # initial setup

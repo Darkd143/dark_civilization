@@ -1,2 +1,0 @@
-function dark_economy:triggers/set_default_display_seconds/reset
-scoreboard players enable @s dark_economy.set_default_display_seconds

@@ -1,1 +1,0 @@
-scoreboard players reset @s dark_economy.set_default_display_seconds

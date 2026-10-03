@@ -1,0 +1,1 @@
+tag @s remove dark_economy.displaying_money
