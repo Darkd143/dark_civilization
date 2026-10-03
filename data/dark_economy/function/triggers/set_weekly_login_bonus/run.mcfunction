@@ -5,6 +5,7 @@ execute if score @s dark_economy.set_weekly_login_bonus matches 1.. store result
 
 # display dialog
 execute if score @s dark_economy.set_weekly_login_bonus matches -1 run function dark_economy:triggers/set_weekly_login_bonus/display/main
+execute unless score @s dark_economy.set_weekly_login_bonus matches -1 run function dark_economy:triggers/manage_login_bonus_menu/display/main
 
 
 # reset trigger
