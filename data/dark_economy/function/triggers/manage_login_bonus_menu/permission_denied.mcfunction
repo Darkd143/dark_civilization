@@ -1,0 +1,2 @@
+function dark_economy:triggers/manage_login_bonus_menu/enable
+function dark_player:permissions/permission_denied

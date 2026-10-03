@@ -1,0 +1,2 @@
+function dark_economy:triggers/manage_login_bonus_menu/reset
+scoreboard players enable @s dark_economy.manage_login_bonus_menu

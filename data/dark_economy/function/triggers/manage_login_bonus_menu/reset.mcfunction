@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_economy.manage_login_bonus_menu
