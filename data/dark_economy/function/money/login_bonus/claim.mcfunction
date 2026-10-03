@@ -6,7 +6,7 @@ function dark_economy:money/login_bonus/message/store_login_bonus_type
 function dark_economy:money/add_money with storage temp
 
 # Money Message
-function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Economy",message:"{text:'Received ',color:'white'},{storage:'temp',nbt:'type_string',color:'white'},{'text':' login bonus of $',color:'white'},{storage:'temp',nbt:'money',color:'white'},{'text':'.',color:'white'}"}
+function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Economy",message:"{text:'Received ',color:'white'},{storage:'temp',nbt:'type_string',color:'white',interpret:true},{'text':' login bonus of $',color:'white'},{storage:'temp',nbt:'money',color:'white'},{'text':'.',color:'white'}"}
 
 # Reset Login Bonus Scores
 function dark_economy:money/login_bonus/remove
