@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_chunk_manager.set_max_radius

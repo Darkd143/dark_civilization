@@ -1,0 +1,2 @@
+function dark_chunk_manager:triggers/worldborder_menu/reset
+scoreboard players enable @s dark_chunk_manager.worldborder_menu

@@ -1,0 +1,3 @@
+scoreboard players operation $dark_chunk_manager.config dark_chunk_manager.total_worldborder_stages = @s dark_chunk_manager.set_total_worldborder_stages
+execute if score $dark_chunk_manager.config dark_chunk_manager.current_worldborder_stage < $dark_chunk_manager.config dark_chunk_manager.total_worldborder_stages run scoreboard players operation $dark_chunk_manager.config dark_chunk_manager.current_worldborder_stage = $dark_chunk_manager.config dark_chunk_manager.total_worldborder_stages
+function dark_chunk_manager:worldborder/recalculate/main

@@ -1,0 +1,2 @@
+scoreboard players operation $dark_chunk_manager.config dark_chunk_manager.current_worldborder_stage = @s dark_chunk_manager.set_current_worldborder_stage
+function dark_chunk_manager:worldborder/recalculate/main
