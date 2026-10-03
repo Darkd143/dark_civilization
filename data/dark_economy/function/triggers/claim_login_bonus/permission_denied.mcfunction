@@ -1,0 +1,2 @@
+function dark_civilization:opt_in/not_opt_in_response
+function dark_economy:triggers/claim_login_bonus/enable

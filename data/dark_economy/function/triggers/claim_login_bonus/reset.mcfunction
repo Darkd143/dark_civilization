@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_economy.claim_login_bonus

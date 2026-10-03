@@ -1,0 +1,2 @@
+function dark_economy:triggers/claim_login_bonus/reset
+scoreboard players enable @s dark_economy.claim_login_bonus

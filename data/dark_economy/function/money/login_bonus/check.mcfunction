@@ -1,8 +1,8 @@
 # If new week, weekly bonus
-execute unless score @s dark_real_time_clock.weeks = $dark_real_time_clock.clock dark_real_time_clock.weeks run return run function dark_economy:money/login_bonus/set {type_string:"weekly",type:2}
+execute if function dark_real_time_clock:clock/helper/new_week_for_player run return run function dark_economy:money/login_bonus/set {type_string:"weekly",type:2}
 
 # If new day, daily bonus
-execute unless score @s dark_real_time_clock.days = $dark_real_time_clock.clock dark_real_time_clock.days run return run function dark_economy:money/login_bonus/set {type_string:"daily",type:3}
+execute if function dark_real_time_clock:clock/helper/new_day_for_player run return run function dark_economy:money/login_bonus/set {type_string:"daily",type:3}
 
 # not new day and current bonuses, announce bonuses again
-execute if score @s dark_economy.login_bonus matches 1.. run function dark_economy:money/login_bonus/message/unclaimed
+execute if function dark_economy:money/login_bonus/has_login_bonus run function dark_economy:money/login_bonus/message/unclaimed
