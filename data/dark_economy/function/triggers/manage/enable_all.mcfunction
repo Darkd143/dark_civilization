@@ -1,1 +1,3 @@
 function dark_economy:triggers/display_money/enable
+function dark_economy:triggers/set_display_seconds/enable
+function dark_economy:triggers/set_default_display_seconds/enable

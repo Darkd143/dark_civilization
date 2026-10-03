@@ -1,1 +1,3 @@
 execute as @a[scores={dark_economy.display_money=1..}] run function dark_economy:triggers/display_money/run
+execute as @a[scores={dark_economy.set_display_seconds=-3..}] unless score @s dark_economy.set_display_seconds matches 0 run function dark_economy:triggers/set_display_seconds/run
+execute as @a[scores={dark_economy.set_default_display_seconds=-1..}] unless score @s dark_economy.set_default_display_seconds matches 0 run function dark_economy:triggers/set_default_display_seconds/run
