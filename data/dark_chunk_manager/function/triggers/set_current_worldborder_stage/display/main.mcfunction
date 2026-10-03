@@ -1,5 +1,5 @@
 # Set up storage
-data merge storage dialog_temp {title:"Dark Chunk Loader - Set Current Worldborder Stage","exit_action":{"label":"Back","tooltip":"Back to Worldborder Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_chunk_manager.worldborder_menu set -1"}},message:"Change the current worldborder stage using the slider and then save.",key:"new_current_worldborder_stage",input_label:"change current worldborder stage",start:1,step:1,columns:1,actions:[{ \
+data merge storage dialog_temp {title:"Dark Chunk Loader - Set Current Worldborder Stage","exit_action":{"label":"Back","tooltip":"Back to Worldborder Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_chunk_manager.worldborder_menu"}},message:"Change the current worldborder stage using the slider and then save.",key:"new_current_worldborder_stage",input_label:"change current worldborder stage",start:1,step:1,columns:1,actions:[{ \
       "label": "Save", \
       "tooltip": "Click to save the current worldborder stages", \
       "action": { \
