@@ -1,7 +1,7 @@
-execute if entity @s[tag=!dark_player.dp_op] run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Player",message:"You do not have permission to access this trigger."}
+execute unless function dark_player:permissions/has_dp_op run function dark_player:permissions/permission_denied
 
 # Display Dialog
-execute if entity @s[tag=dark_player.dp_op] run function dark_player:triggers/op_menu/display/main
+execute if function dark_player:permissions/has_dp_op run function dark_player:triggers/op_menu/display/main
 
 # Reset Trigger
 function dark_player:triggers/op_menu/enable

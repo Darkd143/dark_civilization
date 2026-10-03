@@ -1,0 +1,6 @@
+function dark_chunk_manager:triggers/menu/enable
+function dark_chunk_manager:triggers/set_current_worldborder_stage/enable
+function dark_chunk_manager:triggers/set_initial_radius/enable
+function dark_chunk_manager:triggers/set_max_radius/enable
+function dark_chunk_manager:triggers/set_total_worldborder_stages/enable
+function dark_chunk_manager:triggers/worldborder_menu/enable

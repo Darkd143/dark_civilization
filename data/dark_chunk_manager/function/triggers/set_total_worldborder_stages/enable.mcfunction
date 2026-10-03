@@ -1,0 +1,2 @@
+function dark_chunk_manager:triggers/set_total_worldborder_stages/reset
+scoreboard players enable @s dark_chunk_manager.set_total_worldborder_stages

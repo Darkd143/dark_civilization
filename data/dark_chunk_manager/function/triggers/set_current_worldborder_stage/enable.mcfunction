@@ -1,0 +1,2 @@
+function dark_chunk_manager:triggers/set_current_worldborder_stage/reset
+scoreboard players enable @s dark_chunk_manager.set_current_worldborder_stage

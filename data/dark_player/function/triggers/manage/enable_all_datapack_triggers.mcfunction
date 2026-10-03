@@ -1,0 +1,5 @@
+function dark_player:triggers/manage/enable_all
+function dark_economy:triggers/manage/enable_all
+function dark_civilization:triggers/manage/enable_all
+function dark_chunk_manager:triggers/manage/enable_all
+function dark_real_time_clock:triggers/manage/enable_all

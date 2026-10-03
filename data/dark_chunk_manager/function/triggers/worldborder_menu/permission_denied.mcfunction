@@ -1,0 +1,2 @@
+function dark_chunk_manager:triggers/worldborder_menu/enable
+function dark_player:permissions/permission_denied

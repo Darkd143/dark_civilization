@@ -1,0 +1,2 @@
+function dark_chunk_manager:triggers/set_initial_radius/enable
+function dark_player:permissions/permission_denied

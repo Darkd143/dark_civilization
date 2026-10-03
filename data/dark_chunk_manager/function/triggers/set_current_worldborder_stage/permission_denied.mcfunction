@@ -1,0 +1,2 @@
+function dark_chunk_manager:triggers/set_current_worldborder_stage/enable
+function dark_player:permissions/permission_denied

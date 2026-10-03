@@ -1,0 +1,1 @@
+function dark_player:utils/tellraw/dp_err {dp_name:"Dark Player",message:"You do not have permission to access this trigger."}

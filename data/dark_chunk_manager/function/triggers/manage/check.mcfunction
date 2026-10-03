@@ -1,0 +1,6 @@
+execute as @a[scores={dark_chunk_manager.menu=1..}] run function dark_chunk_manager:triggers/menu/run
+execute as @a[scores={dark_chunk_manager.set_current_worldborder_stage=-1..}] unless score @s dark_chunk_manager.set_current_worldborder_stage matches 0 run function dark_chunk_manager:triggers/set_current_worldborder_stage/run
+execute as @a[scores={dark_chunk_manager.set_initial_radius=-1..}] unless score @s dark_chunk_manager.set_initial_radius matches 0 run function dark_chunk_manager:triggers/set_initial_radius/run
+execute as @a[scores={dark_chunk_manager.set_max_radius=-1..}] unless score @s dark_chunk_manager.set_max_radius matches 0 run function dark_chunk_manager:triggers/set_max_radius/run
+execute as @a[scores={dark_chunk_manager.set_total_worldborder_stages=-1..}] unless score @s dark_chunk_manager.set_total_worldborder_stages matches 0 run function dark_chunk_manager:triggers/set_total_worldborder_stages/run
+execute as @a[scores={dark_chunk_manager.worldborder_menu=1..}] run function dark_chunk_manager:triggers/worldborder_menu/run

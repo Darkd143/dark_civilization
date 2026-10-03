@@ -1,0 +1,2 @@
+execute store result score $dark_chunk_manager.config dark_chunk_manager.worldborder_radius run data get storage dark_chunk_manager.config max_radius
+function dark_chunk_manager:worldborder/update

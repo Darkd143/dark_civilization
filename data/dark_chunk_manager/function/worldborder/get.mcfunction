@@ -1,0 +1,1 @@
+return run worldborder get

@@ -1,0 +1,1 @@
+scoreboard players operation $dark_chunk_manager.config dark_chunk_manager.worldborder_radius += $dark_chunk_manager.config dark_chunk_manager.worldborder_radius
