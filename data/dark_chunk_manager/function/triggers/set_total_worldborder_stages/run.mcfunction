@@ -3,6 +3,7 @@ execute unless function dark_player:permissions/has_dp_op run return run functio
 execute if score @s dark_chunk_manager.set_total_worldborder_stages matches 1.. run function dark_chunk_manager:triggers/set_total_worldborder_stages/set
 
 # display
+execute unless score @s dark_chunk_manager.set_total_worldborder_stages matches -1 run function dark_chunk_manager:triggers/worldborder_menu/display/main
 execute if score @s dark_chunk_manager.set_total_worldborder_stages matches -1 run function dark_chunk_manager:triggers/set_total_worldborder_stages/display/main
 
 # reset trigger
