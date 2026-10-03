@@ -13,13 +13,19 @@ execute if entity @s[tag=dark_player.dp_op] run data modify storage dialog_temp 
     }
 
 # Opt In / Opt Out
-execute if entity @s[tag=!dark_civilization.opt_in] run data modify storage dialog_temp body append value { \
+execute unless function dark_civilization:opt_in/is_opt_in run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
       "contents": [{"text":"● ","color":"white"},{"text":"dark_civilization.toggle_opt_in","color":"green","click_event":{"action":"run_command","command":"/trigger dark_civilization.toggle_opt_in"}},{"text":" - opt in to the Dark Civilization features"}] \
     }
-execute if entity @s[tag=dark_civilization.opt_in] run data modify storage dialog_temp body append value { \
+execute if function dark_civilization:opt_in/is_opt_in run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
       "contents": [{"text":"● ","color":"white"},{"text":"dark_civilization.toggle_opt_in","color":"green","click_event":{"action":"run_command","command":"/trigger dark_civilization.toggle_opt_in"}},{"text":" - opt out of the Dark Civilization features"}] \
+    }
+
+# Display Money
+execute if function dark_civilization:opt_in/is_opt_in run data modify storage dialog_temp body append value { \
+      "type": "minecraft:plain_message", \
+      "contents": [{"text":"● ","color":"white"},{"text":"dark_economy.display_money","color":"green","click_event":{"action":"run_command","command":"/trigger dark_economy.display_money"}},{"text":" - display current 💰 balance"}] \
     }
 
 # display dialog
