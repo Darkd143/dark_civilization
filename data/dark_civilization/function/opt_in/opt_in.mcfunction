@@ -1,5 +1,6 @@
 tag @s add dark_civilization.opt_in
 function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Civilization",message:"You have opted in to the Dark Civilization features."}
+# TODO - Announce help trigger
 
 # Set Initial Login Bonus
 execute unless score @s dark_real_time_clock.days matches 0.. run function dark_economy:money/login_bonus/set {type_string:"initial",type:1}
