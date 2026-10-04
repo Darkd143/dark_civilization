@@ -1,1 +1,0 @@
-scoreboard players reset @s dark_player.afk_return

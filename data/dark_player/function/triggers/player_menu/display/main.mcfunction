@@ -6,7 +6,16 @@ execute if function dark_player:afk/helper/is_afk run data modify storage dialog
     "tooltip": "You are currently AFK, click this to unset it", \
     "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_player.afk_return" \
+        "command": "/trigger dark_player.toggle_afk" \
+    } \
+}
+
+execute unless function dark_player:afk/helper/is_afk run data modify storage dialog_temp actions append value { \
+    "label": "Apply AFK state", \
+    "tooltip": "Set your status to AFK", \
+    "action": { \
+        "type": "minecraft:run_command", \
+        "command": "/trigger dark_player.toggle_afk" \
     } \
 }
 
