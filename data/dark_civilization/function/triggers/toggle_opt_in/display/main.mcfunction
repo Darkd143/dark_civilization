@@ -8,7 +8,7 @@ execute if entity @s[tag=!dark_civilization.opt_in] run data merge storage dialo
     } \
   },no:{"label":"Cancel"}}
 
-execute if entity @s[tag=dark_civilization.opt_in] run data merge storage dialog_temp {title:"Opt Out Confirmation","message":"Warning: You are about to opt out to the Dark Civilization datapack features. This will remove any civilian or mayor status and may reset your Dark Civilization progress. Press Confirm to proceed.","color":"gold",yes:{ \
+execute if entity @s[tag=dark_civilization.opt_in] run data merge storage dialog_temp {title:"Opt Out Confirmation","message":"Warning: You are about to opt out of the Dark Civilization datapack features. This will remove any civilian or mayor status and may reset your Dark Civilization progress. Press Confirm to proceed.","color":"gold",yes:{ \
     "label": "Confirm", \
     "tooltip": "click to opt out", \
     "action": { \

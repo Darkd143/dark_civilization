@@ -1,0 +1,2 @@
+function dark_economy:triggers/set_initial_login_bonus/reset
+scoreboard players enable @s dark_economy.set_initial_login_bonus

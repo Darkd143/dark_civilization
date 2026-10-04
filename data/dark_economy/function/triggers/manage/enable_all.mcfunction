@@ -1,2 +1,7 @@
 function dark_economy:triggers/menu/enable
 function dark_economy:triggers/display_money/enable
+function dark_economy:triggers/claim_login_bonus/enable
+function dark_economy:triggers/manage_login_bonus_menu/enable
+function dark_economy:triggers/set_initial_login_bonus/enable
+function dark_economy:triggers/set_weekly_login_bonus/enable
+function dark_economy:triggers/set_daily_login_bonus/enable

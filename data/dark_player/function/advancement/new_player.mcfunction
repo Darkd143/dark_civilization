@@ -1,1 +1,3 @@
 function dark_player:player_id/assign
+function dark_player:triggers/manage/enable_all_datapack_triggers
+function dark_player:logging_in/first_time_login/main

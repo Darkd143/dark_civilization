@@ -1,0 +1,2 @@
+function dark_economy:triggers/set_daily_login_bonus/enable
+function dark_player:permissions/permission_denied

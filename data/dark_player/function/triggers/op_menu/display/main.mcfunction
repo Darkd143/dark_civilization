@@ -14,6 +14,14 @@ data merge storage dialog_temp {title:"Dark Player - Operator Menu","exit_action
         "type": "minecraft:run_command", \
         "command": "/trigger dark_chunk_manager.menu" \
     } \
+}, \
+{ \
+    "label": "Dark Login Bonus Menu", \
+    "tooltip": "Click to view and edit the login bonuses", \
+    "action": { \
+        "type": "minecraft:run_command", \
+        "command": "/trigger dark_economy.manage_login_bonus_menu" \
+    } \
 }]}
 
 # display dialog

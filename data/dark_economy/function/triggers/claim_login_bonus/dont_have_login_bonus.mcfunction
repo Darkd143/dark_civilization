@@ -1,0 +1,2 @@
+function dark_economy:triggers/claim_login_bonus/enable
+function dark_player:utils/tellraw/dp_err {dp_name:"Dark Economy",message:"Error: You don't have a login bonus to claim. If you believe this is an error, contact a server admin."}
