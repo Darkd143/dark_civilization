@@ -4,3 +4,4 @@ function dark_real_time_clock:triggers/menu/enable
 function dark_real_time_clock:triggers/set_day/enable
 function dark_real_time_clock:triggers/set_hour/enable
 function dark_real_time_clock:triggers/set_week/enable
+function dark_real_time_clock:triggers/set_session_afk_limit/enable

@@ -1,0 +1,1 @@
+execute as @a if function dark_civilization:opt_in/is_opt_in run function dark_player:afk/check

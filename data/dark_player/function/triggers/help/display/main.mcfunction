@@ -22,6 +22,12 @@ execute if function dark_civilization:opt_in/is_opt_in run data modify storage d
       "contents": [{"text":"● ","color":"white"},{"text":"dark_civilization.toggle_opt_in","color":"green","click_event":{"action":"run_command","command":"/trigger dark_civilization.toggle_opt_in"}},{"text":" - opt out of the Dark Civilization features"}] \
     }
 
+# Toggle AFK
+execute if function dark_civilization:opt_in/is_opt_in if function dark_player:afk/helper/is_afk run data modify storage dialog_temp body append value { \
+      "type": "minecraft:plain_message", \
+      "contents": [{"text":"● ","color":"white"},{"text":"dark_player.toggle_afk","color":"green","click_event":{"action":"run_command","command":"/trigger dark_player.toggle_afk"}},{"text":" - apply or remove the AFK state from yourself"}] \
+    }
+
 # Player Menu
 execute if function dark_civilization:opt_in/is_opt_in run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
