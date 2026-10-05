@@ -6,6 +6,7 @@
 # - day (int): The day count 0-6
 # - week (int): The week count 0-6
 # - session_afk_limit (int): The session hour limit for players to be set to AFK 1-24
+# - break_suggest_time (int): The session time before the player starts getting messages to take a break 1-12 or "Disabled"
 
 $data modify storage dialog_temp actions append value { \
       "label": "Clock: $(clock_status)", \
@@ -58,6 +59,15 @@ $data modify storage dialog_temp actions append value { \
       "action": { \
         "type": "minecraft:run_command", \
         "command": "/trigger dark_real_time_clock.set_session_afk_limit set -1" \
+      } \
+    }
+
+$data modify storage dialog_temp actions append value { \
+      "label": "Set break suggest time (Current: $(break_suggest_time))", \
+      "tooltip": "Click to set the break suggest time", \
+      "action": { \
+        "type": "minecraft:run_command", \
+        "command": "/trigger dark_real_time_clock.set_break_suggest_time set -1" \
       } \
     }
     

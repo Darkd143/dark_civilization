@@ -21,6 +21,7 @@ scoreboard objectives add dark_real_time_clock.set_day trigger
 scoreboard objectives add dark_real_time_clock.set_week trigger
 
 scoreboard objectives add dark_real_time_clock.set_session_afk_limit trigger
+scoreboard objectives add dark_real_time_clock.set_break_suggest_time trigger
 
 # initial setup
 function dark_real_time_clock:clock/config/setup
