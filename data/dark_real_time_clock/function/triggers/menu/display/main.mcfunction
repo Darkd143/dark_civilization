@@ -12,6 +12,7 @@ execute if score $dark_real_time_clock.config dark_real_time_clock.display match
 execute store result storage temp hour int 1 run scoreboard players get $dark_real_time_clock.clock dark_real_time_clock.hours
 execute store result storage temp day int 1 run scoreboard players get $dark_real_time_clock.clock dark_real_time_clock.days
 execute store result storage temp week int 1 run scoreboard players get $dark_real_time_clock.clock dark_real_time_clock.weeks
+execute store result storage temp session_afk_limit int 1 run scoreboard players get $dark_real_time_clock.session dark_real_time_clock.hours
 
 function dark_real_time_clock:triggers/menu/display/store_actions with storage temp
 
@@ -21,6 +22,7 @@ data remove storage temp display_status
 data remove storage temp hour
 data remove storage temp day
 data remove storage temp week
+data remove storage temp session_afk_limit
 
 # Display Dialog
 function dark_player:utils/dialog/actions with storage dialog_temp

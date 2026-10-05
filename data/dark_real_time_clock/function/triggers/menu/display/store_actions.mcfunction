@@ -5,6 +5,7 @@
 # - hour (int): The hour count 0-6
 # - day (int): The day count 0-6
 # - week (int): The week count 0-6
+# - session_afk_limit (int): The session hour limit for players to be set to AFK 1-24
 
 $data modify storage dialog_temp actions append value { \
       "label": "Clock: $(clock_status)", \
@@ -50,3 +51,13 @@ $data modify storage dialog_temp actions append value { \
         "command": "/trigger dark_real_time_clock.set_week set -2" \
       } \
     }
+
+$data modify storage dialog_temp actions append value { \
+      "label": "Set the session AFK limit (Current: $(session_afk_limit))", \
+      "tooltip": "Click to set the session AFK limit", \
+      "action": { \
+        "type": "minecraft:run_command", \
+        "command": "/trigger dark_real_time_clock.set_session_afk_limit set  -1" \
+      } \
+    }
+    
