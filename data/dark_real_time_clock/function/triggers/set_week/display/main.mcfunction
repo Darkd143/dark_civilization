@@ -1,5 +1,5 @@
 # Set up storage
-data merge storage dialog_temp {title:"Dark Real Time Clock - Set Week","exit_action":{"label":"Back","tooltip":"Back to Real Time Clock Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_real_time_clock.menu set 1"}},message:"Change the week using the slider and then save, or set to zero.",key:"new_week",input_label:"change week count",start:1,end:52,step:1,columns:1,actions:[{ \
+data merge storage dialog_temp {title:"Dark Real Time Clock - Set Week","exit_action":{"label":"Back","tooltip":"Back to Real Time Clock Menu","action":{"type": "minecraft:run_command","command": "/trigger dark_real_time_clock.menu"}},message:"Change the week using the slider and then save, or set to zero.",key:"new_week",input_label:"change week count",start:1,end:52,step:1,columns:1,actions:[{ \
       "label": "Set week to 0", \
       "tooltip": "Click to set the week count to 0", \
       "action": { \

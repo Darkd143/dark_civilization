@@ -1,0 +1,2 @@
+function dark_real_time_clock:triggers/set_session_afk_limit/reset
+scoreboard players enable @s dark_real_time_clock.set_session_afk_limit
