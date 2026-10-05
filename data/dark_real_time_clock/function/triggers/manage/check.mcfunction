@@ -5,4 +5,4 @@ execute as @a[scores={dark_real_time_clock.set_day=-2..}] unless score @s dark_r
 execute as @a[scores={dark_real_time_clock.set_hour=-2..}] unless score @s dark_real_time_clock.set_hour matches 0 run function dark_real_time_clock:triggers/set_hour/run
 execute as @a[scores={dark_real_time_clock.set_week=-2..}] unless score @s dark_real_time_clock.set_week matches 0 run function dark_real_time_clock:triggers/set_week/run
 execute as @a[scores={dark_real_time_clock.set_session_afk_limit=-1..}] unless score @s dark_real_time_clock.set_session_afk_limit matches 0 run function dark_real_time_clock:triggers/set_session_afk_limit/run
-execute as @a[scores={dark_real_time_clock.set_break_suggest_time=-1..}] unless score @s dark_real_time_clock.set_break_suggest_time matches 0 run function dark_real_time_clock:triggers/set_break_suggest_time/run
+execute as @a[scores={dark_real_time_clock.set_break_suggest_time=-2..}] unless score @s dark_real_time_clock.set_break_suggest_time matches 0 run function dark_real_time_clock:triggers/set_break_suggest_time/run

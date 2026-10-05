@@ -13,7 +13,8 @@ execute store result storage temp hour int 1 run scoreboard players get $dark_re
 execute store result storage temp day int 1 run scoreboard players get $dark_real_time_clock.clock dark_real_time_clock.days
 execute store result storage temp week int 1 run scoreboard players get $dark_real_time_clock.clock dark_real_time_clock.weeks
 execute store result storage temp session_afk_limit int 1 run scoreboard players get $dark_real_time_clock.session dark_real_time_clock.hours
-execute store result storage temp break_suggest_time int 1 run scoreboard players get $dark_real_time_clock.session dark_real_time_clock.days
+execute if score $dark_real_time_clock.session dark_real_time_clock.days matches 1.. store result storage temp break_suggest_time int 1 run scoreboard players get $dark_real_time_clock.session dark_real_time_clock.days
+execute unless score $dark_real_time_clock.session dark_real_time_clock.days matches 1.. run data modify storage temp break_suggest_time set value "Disabled"
 
 function dark_real_time_clock:triggers/menu/display/store_actions with storage temp
 
