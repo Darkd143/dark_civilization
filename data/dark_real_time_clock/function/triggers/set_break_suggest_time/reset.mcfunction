@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_real_time_clock.set_break_suggest_time

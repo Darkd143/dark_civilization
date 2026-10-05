@@ -1,0 +1,12 @@
+# Permissions
+execute unless function dark_player:permissions/has_dp_op run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Real Time Clock",message:"You do not have access to dark_real_time_clock.set_break_suggest_time trigger."}
+
+# Actions
+execute if score @s dark_real_time_clock.set_break_suggest_time matches 1..12 run scoreboard players operation $dark_real_time_clock.session dark_real_time_clock.hours = @s dark_real_time_clock.set_break_suggest_time
+
+# Display Dialog
+execute if score @s dark_real_time_clock.set_break_suggest_time matches -1 run function dark_real_time_clock:triggers/set_break_suggest_time/display/main
+execute unless score @s dark_real_time_clock.set_break_suggest_time matches -1 run function dark_real_time_clock:triggers/menu/display/main
+
+# Enable Trigger
+function dark_real_time_clock:triggers/set_break_suggest_time/enable

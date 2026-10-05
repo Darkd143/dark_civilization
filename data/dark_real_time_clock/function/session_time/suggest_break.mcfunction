@@ -1,0 +1,6 @@
+function dark_real_time_clock:session_time/helper/set_real_hours
+execute if score @s dark_real_time_clock.temp < $dark_real_time_clock.session dark_real_time_clock.days run return run function dark_real_time_clock:session_time/helper/reset_real_hours
+
+execute if score @s dark_real_time_clock.temp matches 1 run function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Real Time Clock",message:"{text:'It seems you have been online for over an hour. Please consider taking a break: get some fresh air, call a friend, touch some grass.',color:'white'}"}
+execute if score @s dark_real_time_clock.temp matches 2.. run function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Real Time Clock",message:"{text:'It seems you have been online for over ',color:'white'},{score:{objective:'dark_real_time_clock.temp',name:'@s'}},{text:' hours. Please consider taking a break: get some fresh air, call a friend, touch some grass.',color:'white'}"}
+function dark_real_time_clock:session_time/helper/reset_real_hours

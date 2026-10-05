@@ -1,0 +1,2 @@
+function dark_real_time_clock:triggers/set_break_suggest_time/reset
+scoreboard players enable @s dark_real_time_clock.set_break_suggest_time

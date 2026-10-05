@@ -7,3 +7,6 @@ execute unless score $dark_real_time_clock.session dark_real_time_clock.minutes 
 
 # Represents hours until player is set to AFK
 execute unless score $dark_real_time_clock.session dark_real_time_clock.hours matches 1.. run scoreboard players set $dark_real_time_clock.session dark_real_time_clock.hours 6
+
+# Represents hours until players should receive messages suggesting taking a break
+execute unless score $dark_real_time_clock.session dark_real_time_clock.days matches 1.. run scoreboard players set $dark_real_time_clock.session dark_real_time_clock.days 4
