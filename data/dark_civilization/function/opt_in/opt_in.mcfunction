@@ -1,5 +1,5 @@
 tag @s add dark_civilization.opt_in
-function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Civilization",message:"You have opt in to the Dark Civilization features."}
+function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Civilization",message:"You have opted in to the Dark Civilization features."}
 function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Civilization",message:"{text:'To review all available features, run ',color:'white'},{'text':'/trigger dark_player.help',click_event:{action:'run_command',command:'/trigger dark_player.help'},color:'green'},{text:'.',color:'white'}"}
 
 # Set Initial Login Bonus
