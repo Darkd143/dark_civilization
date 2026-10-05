@@ -3,8 +3,8 @@ data merge storage dialog_temp {title:"Dark Real Time Clock - Set Break Suggest 
       "label": "Disable", \
       "tooltip": "Click to disable break suggest time", \
       "action": { \
-        "type": "minecraft:dynamic/run_command", \
-        "template": "/trigger dark_real_time_clock.set_break_suggest_time set -2", \
+        "type": "minecraft:run_command", \
+        "command": "/trigger dark_real_time_clock.set_break_suggest_time set -2", \
       } \
     }, \
     { \
@@ -17,8 +17,8 @@ data merge storage dialog_temp {title:"Dark Real Time Clock - Set Break Suggest 
     } \
 ]}
 
-execute if score $dark_real_time_clock.session dark_real_time_clock.days matches 1.. store result storage dialog_temp initial int 1 run scoreboard players get $dark_real_time_clock.session dark_real_time_clock.days
-execute unless score $dark_real_time_clock.session dark_real_time_clock.days matches 1.. run data modify storage dialog_temp initial set value 1
+execute if score $dark_real_time_clock.session dark_real_time_clock.days matches 1..12 store result storage dialog_temp initial int 1 run scoreboard players get $dark_real_time_clock.session dark_real_time_clock.days
+execute unless score $dark_real_time_clock.session dark_real_time_clock.days matches 1..12 run data modify storage dialog_temp initial set value 1
 
 # Display Dialog
 function dark_player:utils/dialog/int_input with storage dialog_temp
