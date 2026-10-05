@@ -53,11 +53,11 @@ $data modify storage dialog_temp actions append value { \
     }
 
 $data modify storage dialog_temp actions append value { \
-      "label": "Set the session AFK limit (Current: $(session_afk_limit))", \
+      "label": "Set session AFK limit (Current: $(session_afk_limit))", \
       "tooltip": "Click to set the session AFK limit", \
       "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_real_time_clock.set_session_afk_limit set  -1" \
+        "command": "/trigger dark_real_time_clock.set_session_afk_limit set -1" \
       } \
     }
     
