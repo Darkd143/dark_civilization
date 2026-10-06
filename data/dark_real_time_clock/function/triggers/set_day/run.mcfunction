@@ -1,5 +1,5 @@
 # Permissions
-execute unless function dark_player:permissions/has_dp_op run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Real Time Clock",message:"You do not have access to dark_real_time_clock.set_day trigger."}
+execute unless function dark_player:permissions/has_dp_op run return run function dark_real_time_clock:triggers/set_day/permission_denied
 
 # Actions
 execute if score @s dark_real_time_clock.set_day matches -1 run function dark_real_time_clock:triggers/set_day/set {value:0}
