@@ -1,5 +1,11 @@
 # Set up Storage
-data merge storage dialog_temp {title:"Create Town Core","body":[],"color":"white", \
+data merge storage dialog_temp {title:"Create Town Core","body":[{ \
+      "type": "minecraft:plain_message", \
+      "contents": { \
+        "text": "Create a town core to start a town? Below are a list of requirements to meet. Make sure you meet all the requirements before selecting 'create'. Note: The town core will be positioned at the xyz block at the positioning of the player's head.", \
+        "color": "white" \
+      } \
+    }],"color":"white", \
   yes:{ \
     "label": "Create", \
     "tooltip": "click to create town core", \
@@ -13,6 +19,7 @@ data merge storage dialog_temp {title:"Create Town Core","body":[],"color":"whit
     "tooltip": "back to civilization menu", \
     "action":{"type": "minecraft:run_command","command": "/trigger dark_civilization.menu"} \
   }}
+
 
 
 # Display Dialog
