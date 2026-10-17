@@ -1,0 +1,2 @@
+scoreboard players set $dark_chunk_manager.config dark_chunk_manager.loaded_chunks 0
+execute as @e[tag=dark_chunk_manager.chunk_loaded_entity] run scoreboard players add $dark_chunk_manager.config dark_chunk_manager.loaded_chunks 1

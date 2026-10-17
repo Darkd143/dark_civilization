@@ -1,1 +1,3 @@
 function dark_civilization:triggers/toggle_opt_in/enable
+function dark_civilization:triggers/menu/enable
+function dark_civilization:triggers/create_town_core/enable

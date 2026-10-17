@@ -1,0 +1,1 @@
+execute as @a[tag=dark_civilization.clicked_town_core] at @s run function dark_civilization:town_core/interact/main

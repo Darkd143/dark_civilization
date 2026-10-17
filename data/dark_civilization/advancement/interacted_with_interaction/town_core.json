@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "clicked": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:nbt": "{Tags:[\"dark_civilization.town_core\"]}"
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dark_civilization:advancement/interacted_with_interaction/town_core"
+  }
+}

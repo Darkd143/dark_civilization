@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:entity_type": "minecraft:player",
+    "minecraft:equipment": {
+      "mainhand": {
+        "items": "minecraft:writable_book",
+        "predicates": {
+          "minecraft:writable_book_content": {
+            "pages": {
+              "size": {
+                "min": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
