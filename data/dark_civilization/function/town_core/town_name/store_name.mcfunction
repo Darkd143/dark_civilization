@@ -1,0 +1,3 @@
+execute unless entity @p[distance=..8,tag=dark_civilization.identified_player] run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: Could not find player creating the Town Core."}
+execute as @p[distance=..8,tag=dark_civilization.identified_player] unless function dark_civilization:town_core/town_name/conditions_met run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: Did not find writable book with valid page data in the player's mainhand."}
+data modify entity @s CustomName set from entity @p[distance=..3,tag=dark_civilization.identified_player] SelectedItem.components.minecraft:writable_book_content.pages[0].raw
