@@ -17,7 +17,7 @@ data modify storage temp town_core_display_item set from storage dark_civilizati
 data modify storage temp build_requirements set from storage dark_civilization.config core_upgrades.1.build_requirements
 data modify storage temp town_core_construction_distance set from storage dark_civilization.config town_core_construction_distance
 
-function dark_civilization:triggers/create_town_core/display/create_prompt/determine_actions with storage temp
+function dark_civilization:triggers/create_town_core/display/determine_actions with storage temp
 
 data remove storage temp cost
 data remove storage temp town_core_display_item
