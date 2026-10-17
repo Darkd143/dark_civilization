@@ -4,11 +4,11 @@
 # - build_requirements (string): The build requirements string
 # - town_core_construction_distance (int): The minimum xz distance to other Town Cores
 
-scoreboard players set @s dark_real_time_clock.temp 0
+scoreboard players set @s dark_civilization.temp 0
 
 # Cost
 $scoreboard players set @s dark_economy.cost $(cost)
-execute if function dark_economy:money/has_money run scoreboard players remove @s dark_real_time_clock.temp 1
+execute if function dark_economy:money/has_money run scoreboard players remove @s dark_civilization.temp 1
 
 $execute if function dark_economy:money/has_money run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
@@ -29,7 +29,7 @@ $execute unless function dark_economy:money/has_money run data modify storage di
 scoreboard players reset @s dark_economy.cost
 
 # Holding Writable Book with a name for the town
-execute unless function dark_civilization:town_core/town_name/conditions_met run scoreboard players remove @s dark_real_time_clock.temp 1
+execute unless function dark_civilization:town_core/town_name/conditions_met run scoreboard players remove @s dark_civilization.temp 1
 
 $execute if function dark_civilization:town_core/town_name/conditions_met run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
@@ -58,7 +58,7 @@ $data modify storage dialog_temp body append value { \
 
 # Not Placed within x blocks of another Town Core
 execute if function dark_civilization:town_core/helper/town_core_too_close/main run scoreboard players set @s dark_economy.cost -1
-execute if score @s dark_economy.cost matches -1 run scoreboard players remove @s dark_real_time_clock.temp 1
+execute if score @s dark_economy.cost matches -1 run scoreboard players remove @s dark_civilization.temp 1
 
 $execute if score @s dark_economy.cost matches -1 run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
@@ -79,7 +79,7 @@ $execute unless score @s dark_economy.cost matches -1 run data modify storage di
 scoreboard players reset @s dark_economy.cost
 
 # Yes Button
-execute if score @s dark_real_time_clock.temp matches ..-1 run data modify storage dialog_temp yes set value { \
+execute if score @s dark_civilization.temp matches ..-1 run data modify storage dialog_temp yes set value { \
     "label": { \
       "text": "Create", \
       "color": "red" \
@@ -94,7 +94,7 @@ execute if score @s dark_real_time_clock.temp matches ..-1 run data modify stora
     } \
   }
 
-execute unless score @s dark_real_time_clock.temp matches ..-1 run data modify storage dialog_temp yes set value { \
+execute unless score @s dark_civilization.temp matches ..-1 run data modify storage dialog_temp yes set value { \
     "label": "Create", \
     "tooltip": "create a town core", \
     "action": { \
@@ -103,4 +103,4 @@ execute unless score @s dark_real_time_clock.temp matches ..-1 run data modify s
     } \
   }
 
-scoreboard players reset @s dark_real_time_clock.temp
+scoreboard players reset @s dark_civilization.temp
