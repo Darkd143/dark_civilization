@@ -90,7 +90,7 @@ execute if score @s dark_civilization.temp matches ..-1 run data merge storage d
     }, \
     "action": { \
       "type": "minecraft:run_command", \
-      "command": "/trigger dark_civilization.toggle_opt_in set 2" \
+      "command": "/trigger dark_civilization.create_town_core set 2" \
     } \
   }}
 
@@ -99,7 +99,7 @@ execute unless score @s dark_civilization.temp matches ..-1 run data merge stora
     "tooltip": "create a town core", \
     "action": { \
       "type": "minecraft:run_command", \
-      "command": "/trigger dark_civilization.toggle_opt_in set 2" \
+      "command": "/trigger dark_civilization.create_town_core set 2" \
     } \
   }}
 

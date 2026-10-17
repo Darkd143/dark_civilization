@@ -6,7 +6,7 @@ scoreboard players set @s dark_economy.cost 0
 
 # Check all town cores withing 500 blocks
 tag @s add dark_civilization.identified_player
-execute as @e[distance=..500,tag=dark_civilization.town_core,type=minecraft:interaction] run function dark_civilization:town_core/helper/town_core_too_close/check_one with storage temp
+execute as @e[distance=..500,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:town_core/helper/town_core_too_close/check_one with storage temp
 tag @s remove dark_civilization.identified_player
 
 # Determine

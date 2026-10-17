@@ -5,7 +5,7 @@
 $data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
       "contents": { \
-        "text": "$(index). $(feature)", \
+        "text": "$(index). $(feature_name)", \
         "color": "white" \
       } \
     }
