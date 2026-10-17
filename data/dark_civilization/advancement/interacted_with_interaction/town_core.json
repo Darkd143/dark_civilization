@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "dark_civilization:advancement/interacted_with_interaction"
+    "function": "dark_civilization:advancement/interacted_with_interaction/town_core"
   }
 }
