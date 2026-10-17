@@ -19,12 +19,23 @@ execute unless function dark_player:afk/helper/is_afk run data modify storage di
     } \
 }
 
+# Dark Economy Menu
 data modify storage dialog_temp actions append value { \
     "label": "Economy Menu", \
     "tooltip": "Manage Money", \
     "action": { \
         "type": "minecraft:run_command", \
         "command": "/trigger dark_economy.menu" \
+    } \
+}
+
+# Dark Civilization Menu
+data modify storage dialog_temp actions append value { \
+    "label": "Civilization Menu", \
+    "tooltip": "Manage Civilization Features", \
+    "action": { \
+        "type": "minecraft:run_command", \
+        "command": "/trigger dark_civilization.menu" \
     } \
 }
 

@@ -4,7 +4,7 @@ data merge storage dialog_temp {title:"Dark Civilization - Menu","exit_action":{
     "tooltip": "Create a town core (click for more information)", \
     "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_player.player_menu" \
+        "command": "/trigger dark_civilization.create_town_core" \
     } \
 }]}
 

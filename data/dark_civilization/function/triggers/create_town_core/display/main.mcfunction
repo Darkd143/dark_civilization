@@ -49,6 +49,8 @@ execute unless data storage temp features[0] run return run function dark_player
 function dark_civilization:triggers/create_town_core/display/add_feature/main {index:0}
 
 data remove storage temp features
+data remove storage temp feature_name
+data remove storage temp index
 scoreboard players reset @s dark_civilization.temp
 
 # Display Dialog
@@ -59,4 +61,3 @@ data remove storage dialog_temp title
 data remove storage dialog_temp body
 data remove storage dialog_temp yes
 data remove storage dialog_temp no
-data remove storage dialog_temp action

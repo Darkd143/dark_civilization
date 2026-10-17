@@ -8,4 +8,6 @@ function dark_civilization:triggers/create_town_core/display/add_feature/macro w
 
 scoreboard players add @s dark_civilization.temp 1
 execute store result storage temp index int 1 run scoreboard players get @s dark_civilization.temp
+
+# Loop
 function dark_civilization:triggers/create_town_core/display/add_feature/main with storage temp

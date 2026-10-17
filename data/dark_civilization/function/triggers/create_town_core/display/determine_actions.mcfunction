@@ -79,7 +79,7 @@ $execute unless score @s dark_economy.cost matches -1 run data modify storage di
 scoreboard players reset @s dark_economy.cost
 
 # Yes Button
-execute if score @s dark_civilization.temp matches ..-1 run data modify storage dialog_temp yes set value { \
+execute if score @s dark_civilization.temp matches ..-1 run data merge storage dialog_temp {yes:{ \
     "label": { \
       "text": "Create", \
       "color": "red" \
@@ -92,15 +92,15 @@ execute if score @s dark_civilization.temp matches ..-1 run data modify storage 
       "type": "minecraft:run_command", \
       "command": "/trigger dark_civilization.toggle_opt_in set 2" \
     } \
-  }
+  }}
 
-execute unless score @s dark_civilization.temp matches ..-1 run data modify storage dialog_temp yes set value { \
+execute unless score @s dark_civilization.temp matches ..-1 run data merge storage dialog_temp {yes:{ \
     "label": "Create", \
     "tooltip": "create a town core", \
     "action": { \
       "type": "minecraft:run_command", \
       "command": "/trigger dark_civilization.toggle_opt_in set 2" \
     } \
-  }
+  }}
 
 scoreboard players reset @s dark_civilization.temp
