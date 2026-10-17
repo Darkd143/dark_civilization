@@ -1,0 +1,1 @@
+scoreboard players operation @s dark_civilization.town_core_id = @n[distance=..3,tag=dark_civilization.new_town_core,type=minecraft:interaction] dark_civilization.town_core_id

@@ -1,5 +1,6 @@
 # objectives
 scoreboard objectives add dark_civilization.town_core_id dummy
+scoreboard objectives add dark_civilization.core_level dummy
 
 # triggers
 scoreboard objectives add dark_civilization.toggle_opt_in trigger
