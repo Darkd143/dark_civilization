@@ -3,6 +3,7 @@ function dark_civilization:town_core/id/assign
 
 # Apply Initial Scores
 scoreboard players set @s dark_civilization.core_level 1
+scoreboard players operation @p[tag=dark_civilization.identified_player] dark_civilization.town_core_id = @s dark_civilization.town_core_id
 
 # Setup Item Display
 function dark_civilization:town_core/entities/item_display/create with storage dark_civilization.config

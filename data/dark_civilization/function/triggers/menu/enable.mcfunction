@@ -1,0 +1,2 @@
+function dark_civilization:triggers/create_town_core/reset
+scoreboard players enable @s dark_civilization.menu
