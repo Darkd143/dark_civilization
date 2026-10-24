@@ -8,7 +8,7 @@ scoreboard players set @s dark_civilization.temp 0
 
 # Cost
 $scoreboard players set @s dark_economy.cost $(cost)
-execute if function dark_economy:money/has_money run scoreboard players remove @s dark_civilization.temp 1
+execute unless function dark_economy:money/has_money run scoreboard players remove @s dark_civilization.temp 1
 
 $execute if function dark_economy:money/has_money run data modify storage dialog_temp body append value { \
       "type": "minecraft:plain_message", \
