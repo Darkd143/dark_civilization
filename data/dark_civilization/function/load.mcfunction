@@ -2,6 +2,7 @@
 scoreboard objectives add dark_civilization.town_core_id dummy
 scoreboard objectives add dark_civilization.core_level dummy
 scoreboard objectives add dark_civilization.core_range dummy
+scoreboard objectives add dark_civilization.citizen_role dummy
 scoreboard objectives add dark_civilization.temp dummy
 
 # triggers

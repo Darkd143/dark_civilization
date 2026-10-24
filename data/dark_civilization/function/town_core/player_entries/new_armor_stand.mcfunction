@@ -1,1 +1,0 @@
-summon minecraft:armor_stand ~ ~ ~ {Tags:["dark_civilization.town_core_player_entry","dark_civilization.new_player_entry"],NoGravity:true,Invisible:true,Invulnerable:true,Marker:true}
