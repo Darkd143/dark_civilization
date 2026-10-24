@@ -1,0 +1,2 @@
+function dark_civilization:triggers/revoke_citizenship/reset
+scoreboard players enable @s dark_civilization.revoke_citizenship

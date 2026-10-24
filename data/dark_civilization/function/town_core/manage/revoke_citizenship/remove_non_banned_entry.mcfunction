@@ -1,0 +1,1 @@
+execute as @e[distance=..5,tag=dark_civilization.town_core_player_entry,scores={dark_civilization.citizen_role=3..},type=minecraft:armor_stand] run kill @s

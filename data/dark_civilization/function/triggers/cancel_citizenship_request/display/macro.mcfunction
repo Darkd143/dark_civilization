@@ -1,6 +1,5 @@
 # Parameters:
 # - town_name (string): The name of the town
-# - town_core_id (int): The id of the town core
 
 # Set up storage
 data merge storage dialog_temp {title:"Dark Civilization - Cancel Citizenship Request",color:"white",no:{"label":"Cancel"},message:"Cancel your citizenship request to $(town_name)?",yes:{ \
