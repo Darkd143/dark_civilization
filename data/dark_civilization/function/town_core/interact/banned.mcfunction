@@ -1,0 +1,1 @@
+function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"You have been banned from requesting access to this town."}
