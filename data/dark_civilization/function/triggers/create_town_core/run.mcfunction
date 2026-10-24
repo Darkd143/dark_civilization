@@ -12,4 +12,4 @@ execute unless score @s dark_civilization.create_town_core matches 2 run return 
 function dark_civilization:triggers/create_town_core/enable
 
 execute unless function dark_civilization:town_core/helper/can_create_core run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: All requirements to create the Town Core have not been met."}
-execute at @s align xyz positioned ~0.5 ~ ~0.5 run function dark_civilization:town_core/manage/create
+execute at @s align xyz positioned ~0.5 ~ ~0.5 run function dark_civilization:town_core/create
