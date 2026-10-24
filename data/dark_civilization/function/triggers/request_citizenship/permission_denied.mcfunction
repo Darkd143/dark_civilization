@@ -1,0 +1,2 @@
+function dark_civilization:triggers/request_citizenship/enable
+function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"You do not have permission to trigger dark_civilization.menu."}

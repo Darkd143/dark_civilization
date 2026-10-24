@@ -9,6 +9,7 @@ scoreboard objectives add dark_civilization.temp dummy
 scoreboard objectives add dark_civilization.toggle_opt_in trigger
 scoreboard objectives add dark_civilization.menu trigger
 scoreboard objectives add dark_civilization.create_town_core trigger
+scoreboard objectives add dark_civilization.request_citizenship trigger
 
 # initial setup
 execute unless data storage dark_civilization.config core_upgrades run function dark_civilization:config/setup

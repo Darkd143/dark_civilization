@@ -1,0 +1,2 @@
+function dark_civilization:triggers/request_citizenship/enable
+function dark_civilization:town_core/interact/different_town_citizen

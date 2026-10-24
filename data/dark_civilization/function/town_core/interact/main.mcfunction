@@ -11,4 +11,4 @@ execute if function dark_civilization:town_core/permissions/is_citizen run retur
 execute if function dark_civilization:town_core/permissions/is_citizen_of_any_town run return run function dark_civilization:town_core/interact/different_town_citizen
 
 # If Player is not a Citizen of a Town
-function dark_civilization:town_core/interact/non_citizen
+function dark_civilization:town_core/interact/non_citizen/main
