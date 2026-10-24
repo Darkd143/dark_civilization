@@ -1,0 +1,2 @@
+function dark_civilization:triggers/cancel_citizenship_request/reset
+scoreboard players enable @s dark_civilization.cancel_citizenship_request

@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:interaction] at @s as @p[tag=dark_civilization.identified_player] if function dark_civilization:town_core/entities/player_entries/has_for_caller/types/requestor run return run function dark_civilization:triggers/cancel_citizenship_request/display/store_town_info
+return fail

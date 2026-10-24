@@ -1,0 +1,1 @@
+function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Civilization",message:"{text:'Error: You already have a citizenship request in progress. You must ',color:'red'},{text:'[Cancel your request]','click_event':{'action':'run_command','command':'/trigger dark_civilization.cancel_citizenship_request'},color:'green'},{text:'before sending another one.',color:'red'}"}

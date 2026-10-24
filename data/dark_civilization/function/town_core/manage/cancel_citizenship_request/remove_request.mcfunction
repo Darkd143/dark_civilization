@@ -1,0 +1,4 @@
+execute as @e[distance=..5,tag=dark_civilization.town_core_player_entry_request,type=minecraft:armor_stand] if score @s dark_player.player_id = @p[tag=dark_civilization.identified_player] dark_player.player_id run kill @s
+tag @s add dark_civilization.identified_interaction
+execute as @p[tag=dark_civilization.identified_player] run function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Civilization",message:"{text:'Canceled your citizenship request to ',color:'white'},{selector:'@n[tag=dark_civilization.identified_interaction]',color:'white},{text:'.',color:'white}"}
+tag @s remove dark_civilization.identified_interaction

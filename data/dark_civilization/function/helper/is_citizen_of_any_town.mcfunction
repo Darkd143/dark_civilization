@@ -1,0 +1,3 @@
+execute unless score @p[tag=dark_civilization.identified_player] dark_civilization.town_core_id matches 1.. run return 0
+execute as @e[type=minecraft:interaction] if score @p[tag=dark_civilization.identified_player] dark_civilization.town_core_id = @s dark_civilization.town_core_id at @s as @p[tag=dark_civilization.identified_player] if function dark_civilization:town_core/entities/player_entries/has_for_caller/types/citizen_plus run return 1
+return 0

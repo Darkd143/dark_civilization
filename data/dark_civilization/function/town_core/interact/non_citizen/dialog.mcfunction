@@ -24,7 +24,7 @@ execute unless function dark_civilization:town_core/settings/auto_accept_citizen
   }}
 
 # Display dialog
-function dark_player:utils/dialog/confirmation with storage dialog_temp
+execute as @p[tag=dark_civilization.identified_player] run function dark_player:utils/dialog/confirmation with storage dialog_temp
 
 # Remove storage
 data remove storage dialog_temp title

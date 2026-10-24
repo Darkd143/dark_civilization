@@ -1,2 +1,0 @@
-execute at @n[tag=dark_civilization.identified_interaction,type=minecraft:interaction] as @p[tag=dark_civilization.identified_player] if function dark_civilization:town_core/entities/player_entries/has_for_caller/banned/main run return 1
-return 0
