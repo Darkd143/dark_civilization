@@ -1,0 +1,4 @@
+function dark_civilization:triggers/view_town_citizen_list/run
+
+# Reset Score
+function dark_civilization:triggers/view_town_citizen_list/enable

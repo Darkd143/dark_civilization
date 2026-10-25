@@ -9,6 +9,3 @@ execute unless score @s dark_civilization.cancel_citizenship_request matches 2 r
 
 # Cancel request
 execute if score @s dark_civilization.cancel_citizenship_request matches 2 run function dark_civilization:town_core/manage/cancel_citizenship_request/main
-
-# Reset Score
-function dark_civilization:triggers/cancel_citizenship_request/enable

@@ -1,3 +1,2 @@
-function dark_civilization:triggers/request_citizenship/enable
 function dark_civilization:town_core/interact/banned
 tag @e[tag=dark_civilization.identified_interaction,type=minecraft:interaction] remove dark_civilization.identified_interaction

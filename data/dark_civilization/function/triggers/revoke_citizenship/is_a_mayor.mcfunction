@@ -1,2 +1,0 @@
-function dark_civilization:triggers/revoke_citizenship/enable
-function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"You cannot revoke your citizenship without assigning a new mayor. To assign a new mayor, interact with the town core."}

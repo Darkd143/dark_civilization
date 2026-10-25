@@ -19,12 +19,11 @@ scoreboard objectives add dark_civilization.view_town_citizen_list trigger
 
 # TODO
 scoreboard objectives add dark_civilization.accept_citizen_request trigger
-scoreboard objectives add dark_civilization.reject_citizen_request trigger
 scoreboard objectives add dark_civilization.ban_citizen trigger
+scoreboard objectives add dark_civilization.remove_citizen trigger
 scoreboard objectives add dark_civilization.apply_citizen_role trigger
 scoreboard objectives add dark_civilization.apply_deputy_mayor_role trigger
 scoreboard objectives add dark_civilization.assign_new_mayor trigger
-scoreboard objectives add dark_civilization.remove_citizen trigger
 
 # initial setup
 execute unless data storage dark_civilization.config core_upgrades run function dark_civilization:config/setup

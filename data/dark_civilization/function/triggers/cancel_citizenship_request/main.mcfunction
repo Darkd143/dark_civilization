@@ -1,0 +1,4 @@
+function dark_civilization:triggers/cancel_citizenship_request/run
+
+# Reset Score
+function dark_civilization:triggers/cancel_citizenship_request/enable

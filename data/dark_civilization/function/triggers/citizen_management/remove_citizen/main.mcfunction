@@ -1,0 +1,4 @@
+function dark_civilization:triggers/citizen_management/remove_citizen/run
+
+# Reset Trigger
+function dark_civilization:triggers/citizen_management/remove_citizen/enable

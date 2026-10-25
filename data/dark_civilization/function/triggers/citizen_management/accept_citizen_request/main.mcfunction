@@ -1,0 +1,4 @@
+function dark_civilization:triggers/citizen_management/accept_citizen_request/run
+
+# Reset Trigger
+function dark_civilization:triggers/citizen_management/accept_citizen_request/enable

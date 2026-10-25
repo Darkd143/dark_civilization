@@ -1,0 +1,4 @@
+function dark_civilization:triggers/citizen_management/ban_citizen/run
+
+# Reset Trigger
+function dark_civilization:triggers/citizen_management/ban_citizen/enable

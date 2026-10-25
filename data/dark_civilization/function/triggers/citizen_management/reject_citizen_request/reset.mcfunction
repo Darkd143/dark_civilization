@@ -1,1 +1,0 @@
-scoreboard players reset @s dark_civilization.reject_citizen_request

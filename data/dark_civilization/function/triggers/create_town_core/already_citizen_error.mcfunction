@@ -1,2 +1,0 @@
-function dark_civilization:triggers/create_town_core/enable
-function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: You cannot create a Town Core if you are already a citizen of a town."}

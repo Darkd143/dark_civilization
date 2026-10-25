@@ -16,6 +16,3 @@ tag @s remove dark_civilization.identified_player
 
 # Cleanup
 tag @e[tag=dark_civilization.identified_interaction,type=minecraft:interaction] remove dark_civilization.identified_interaction
-
-# Reset Trigger
-function dark_civilization:triggers/citizen_management/accept_citizen_request/enable

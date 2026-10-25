@@ -1,0 +1,4 @@
+function dark_civilization:triggers/citizen_management/assign_new_mayor/run
+
+# Reset Trigger
+function dark_civilization:triggers/citizen_management/assign_new_mayor/enable

@@ -1,0 +1,4 @@
+function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/run
+
+# Reset Trigger
+function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/enable

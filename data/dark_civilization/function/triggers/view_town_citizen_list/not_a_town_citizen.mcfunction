@@ -1,2 +1,0 @@
-function dark_civilization:triggers/view_town_citizen_list/enable
-function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Civilization",message:"Error: You aren't a citizen of a town. You don't have access to this command."}
