@@ -1,6 +1,3 @@
-# Tag interaction
-tag @s add dark_civilization.identified_interaction
-
 # if Player is Banned
 execute if function dark_civilization:helper/is_banned run return run function dark_civilization:town_core/interact/banned
 

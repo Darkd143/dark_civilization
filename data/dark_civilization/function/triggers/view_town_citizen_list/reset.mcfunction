@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_civilization.view_town_citizen_list

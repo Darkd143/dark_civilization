@@ -3,3 +3,4 @@ function dark_civilization:triggers/menu/enable
 function dark_civilization:triggers/create_town_core/enable
 function dark_civilization:triggers/request_citizenship/enable
 function dark_civilization:triggers/revoke_citizenship/enable
+function dark_civilization:triggers/view_town_citizen_list/enable

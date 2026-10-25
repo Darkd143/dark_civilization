@@ -1,0 +1,2 @@
+function dark_civilization:triggers/view_town_citizen_list/reset
+scoreboard players enable @s dark_civilization.view_town_citizen_list

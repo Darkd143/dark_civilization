@@ -1,0 +1,2 @@
+scoreboard players reset @s dark_civilization.citizen_role
+execute as @e[distance=..3,tag=dark_civilization.town_core_player_entry,scores={dark_civilization.citizen_role=3..},type=minecraft:armor_stand] if score @s dark_player.player_id = @p[tag=dark_civilization.identified_player] dark_player.player_id run scoreboard players operation @p[tag=dark_civilization.identified_player] dark_civilization.citizen_role = @s dark_civilization.citizen_role
