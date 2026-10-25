@@ -1,2 +1,2 @@
-function dark_civilization:triggers/remove_citizen/reset
+function dark_civilization:triggers/citizen_management/remove_citizen/reset
 scoreboard players enable @s dark_civilization.remove_citizen

@@ -1,3 +1,5 @@
+scoreboard players set @p[tag=dark_civilization.identified_player] dark_economy.cost 1
+
 # Setup storage
 data merge storage dialog_temp {title:"Accept Citizen Request Confirmation",color:"white"}
 

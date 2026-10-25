@@ -11,7 +11,7 @@ execute unless function dark_civilization:triggers/citizen_management/manage/sha
 execute if function dark_civilization:triggers/citizen_management/manage/shared/editing_yourself run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: You cannot ban yourself."}
 
 # Player is high enough level to use the entry
-execute unless function dark_civilization:triggers/citizen_management/manage/shared/is_editing_lower_entry as @p[tag=dark_civilization.identified_player] run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Permission Denied: User must be the mayor to demote other deputy mayors to citizens."}
+execute unless function dark_civilization:triggers/citizen_management/manage/shared/is_editing_lower_entry as @p[tag=dark_civilization.identified_player] run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Permission Denied: User must have a higher role than the player they are removing."}
 
 # Run functionality as the player entry
 execute as @n[distance=..3,tag=dark_civilization.town_core_player_entry,tag=dark_civilization.identified_player_entry,type=minecraft:armor_stand] run function dark_civilization:triggers/citizen_management/ban_citizen/core_functionality/run
