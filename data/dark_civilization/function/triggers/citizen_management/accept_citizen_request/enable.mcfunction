@@ -1,0 +1,2 @@
+function dark_civilization:triggers/citizen_management/accept_citizen_request/reset
+scoreboard players enable @s dark_civilization.accept_citizen_request

@@ -8,11 +8,13 @@ scoreboard objectives add dark_civilization.temp dummy
 # triggers
 scoreboard objectives add dark_civilization.toggle_opt_in trigger
 scoreboard objectives add dark_civilization.menu trigger
+
 scoreboard objectives add dark_civilization.create_town_core trigger
 
 scoreboard objectives add dark_civilization.request_citizenship trigger
 scoreboard objectives add dark_civilization.cancel_citizenship_request trigger
 scoreboard objectives add dark_civilization.revoke_citizenship trigger
+
 scoreboard objectives add dark_civilization.view_town_citizen_list trigger
 
 # TODO

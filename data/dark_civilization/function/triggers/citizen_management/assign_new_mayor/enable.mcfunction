@@ -1,0 +1,2 @@
+function dark_civilization:triggers/assign_new_mayor/reset
+scoreboard players enable @s dark_civilization.assign_new_mayor

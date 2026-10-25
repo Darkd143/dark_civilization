@@ -1,0 +1,2 @@
+function dark_civilization:triggers/apply_citizen_role/reset
+scoreboard players enable @s dark_civilization.apply_citizen_role

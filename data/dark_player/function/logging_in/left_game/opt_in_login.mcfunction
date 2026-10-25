@@ -8,8 +8,7 @@ function dark_player:afk/coords/set_macro {type:"last"}
 # Announce all AFK players
 execute if entity @p[tag=dark_player.afk] run function dark_player:utils/tellraw/dp_obj_msg {dp_name:"Dark Player",message:"{text:'Players Currently AFK: ',color:'white'},{selector:'@a[tag=dark_player.afk]',color:'white'}"}
 
-# TODO: Set Town Status as active
-
+# TODO: Refresh town situation and reset active player timer
 
 # Set Current Days and Weeks
 scoreboard players operation @s dark_real_time_clock.days = $dark_real_time_clock.clock dark_real_time_clock.days

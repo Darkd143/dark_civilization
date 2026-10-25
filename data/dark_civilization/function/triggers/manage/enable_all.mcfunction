@@ -1,6 +1,12 @@
 function dark_civilization:triggers/toggle_opt_in/enable
 function dark_civilization:triggers/menu/enable
+
 function dark_civilization:triggers/create_town_core/enable
+
 function dark_civilization:triggers/request_citizenship/enable
+function dark_civilization:triggers/cancel_citizenship_request/enable
 function dark_civilization:triggers/revoke_citizenship/enable
+
 function dark_civilization:triggers/view_town_citizen_list/enable
+
+function dark_civilization:triggers/citizen_management/manage/enable_all

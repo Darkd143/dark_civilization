@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_civilization.apply_deputy_mayor_role

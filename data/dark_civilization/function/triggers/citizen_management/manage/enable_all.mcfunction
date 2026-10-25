@@ -1,0 +1,7 @@
+function dark_civilization:triggers/citizen_management/accept_citizen_request/enable
+function dark_civilization:triggers/citizen_management/reject_citizen_request/enable
+function dark_civilization:triggers/citizen_management/ban_citizen/enable
+function dark_civilization:triggers/citizen_management/apply_citizen_role/enable
+function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/enable
+function dark_civilization:triggers/citizen_management/assign_new_mayor/enable
+function dark_civilization:triggers/citizen_management/remove_citizen/enable

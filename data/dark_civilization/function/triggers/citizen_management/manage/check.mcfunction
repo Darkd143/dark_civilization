@@ -1,0 +1,7 @@
+execute as @a[scores={dark_civilization.accept_citizen_request=-1..}] unless score @s dark_civilization.accept_citizen_request matches 0 run function dark_civilization:triggers/citizen_management/accept_citizen_request/run
+execute as @a[scores={dark_civilization.reject_citizen_request=-1..}] unless score @s dark_civilization.reject_citizen_request matches 0 run function dark_civilization:triggers/citizen_management/reject_citizen_request/run
+execute as @a[scores={dark_civilization.ban_citizen=-1..}] unless score @s dark_civilization.ban_citizen matches 0 run function dark_civilization:triggers/citizen_management/ban_citizen/run
+execute as @a[scores={dark_civilization.apply_citizen_role=-1..}] unless score @s dark_civilization.apply_citizen_role matches 0 run function dark_civilization:triggers/citizen_management/apply_citizen_role/run
+execute as @a[scores={dark_civilization.apply_deputy_mayor_role=-1..}] unless score @s dark_civilization.apply_deputy_mayor_role matches 0 run function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/run
+execute as @a[scores={dark_civilization.assign_new_mayor=-1..}] unless score @s dark_civilization.assign_new_mayor matches 0 run function dark_civilization:triggers/citizen_management/assign_new_mayor/run
+execute as @a[scores={dark_civilization.remove_citizen=-1..}] unless score @s dark_civilization.remove_citizen matches 0 run function dark_civilization:triggers/citizen_management/remove_citizen/run

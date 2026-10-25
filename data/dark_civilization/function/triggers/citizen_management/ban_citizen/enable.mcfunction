@@ -1,0 +1,2 @@
+function dark_civilization:triggers/ban_citizen/reset
+scoreboard players enable @s dark_civilization.ban_citizen
