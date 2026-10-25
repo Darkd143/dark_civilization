@@ -1,2 +1,2 @@
-function dark_civilization:triggers/apply_deputy_mayor_role/reset
+function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/reset
 scoreboard players enable @s dark_civilization.apply_deputy_mayor_role

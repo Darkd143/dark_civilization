@@ -1,0 +1,2 @@
+execute if score @n[distance=..3,tag=dark_civilization.identified_player_entry,type=minecraft:armor_stand] dark_player.player_id = @p[tag=dark_civilization.identified_player] dark_player.player_id run return 1
+return 0

@@ -4,6 +4,7 @@ execute unless function dark_civilization:helper/permissions/can_manage_citizen_
 # Player request found
 data merge storage temp {role:2}
 data merge storage temp {tag:"dark_civilization.identified_player_entry"}
+execute as @p[tag=dark_civilization.identified_player] run function dark_civilization:triggers/citizen_management/manage/shared/abs_trigger_as_temp {trigger_name:"accept_citizen_request"}
 execute unless function dark_civilization:triggers/citizen_management/manage/shared/player_entry_found as @p[tag=dark_civilization.identified_player] run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Failed to find a citizen request for the requested player."}
 
 # Run functionality as the player entry
