@@ -15,7 +15,7 @@ $data merge storage dialog_temp {title:"$(town_name) Town Core Menu",exit_action
     } \
 }]}
 
-# Citizen Request Menu TODO
+# Citizen Request Menu
 execute if function dark_civilization:helper/permissions/can_manage_citizen_requests run data modify storage dialog_temp actions append value { \
     "label": "Manage Citizenship Requests", \
     "tooltip": "manage $(town_name) citizenship requests", \
@@ -25,7 +25,7 @@ execute if function dark_civilization:helper/permissions/can_manage_citizen_requ
     } \
 }
 
-# Manage Players TODO
+# Manage Players
 execute if function dark_civilization:helper/permissions/can_view_manage_players_list run data modify storage dialog_temp actions append value { \
     "label": "Manage Citizens", \
     "tooltip": "manage $(town_name) citizens", \
