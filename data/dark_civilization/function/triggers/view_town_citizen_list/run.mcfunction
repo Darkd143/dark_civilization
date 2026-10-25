@@ -22,5 +22,9 @@ execute if score @s dark_civilization.view_town_citizen_list matches 1..4 run fu
 data remove storage temp path_route
 tag @s remove dark_civilization.identified_player
 
+# Save last menu for the player
+execute if score @s dark_civilization.view_town_citizen_list matches 2 run scoreboard players set @s dark_civilization.last_menu 1
+execute if score @s dark_civilization.view_town_citizen_list matches 3 run scoreboard players reset @s dark_civilization.last_menu
+
 # Cleanup
 tag @e[tag=dark_civilization.identified_interaction,type=minecraft:interaction] remove dark_civilization.identified_interaction

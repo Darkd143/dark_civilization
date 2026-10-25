@@ -1,7 +1,7 @@
-function dark_civilization:triggers/citizen_management/manage/shared/abs_trigger_as_temp
+execute as @p[tag=dark_civilization.identified_player] run function dark_civilization:triggers/citizen_management/manage/shared/abs_trigger_as_temp {trigger_name:"accept_citizen_request"}
 
 data merge storage temp {role:2}
-execute store result storage temp player_id int 1 run scoreboard players get @s dark_civilization.temp
+execute store result storage temp player_id int 1 run scoreboard players get @p[tag=dark_civilization.identified_player] dark_civilization.temp
 
 scoreboard players reset @s dark_civilization.temp
 function dark_civilization:town_core/entities/player_entries/has_for_scores/main with storage temp

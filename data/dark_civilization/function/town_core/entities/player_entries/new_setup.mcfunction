@@ -8,10 +8,10 @@ $scoreboard players set @s dark_player.player_id $(player_id)
 $scoreboard players set @s dark_civilization.town_core_id $(town_core_id)
 
 # Assign the role score
-$function dark_civilization:town_core/entities/player_entries/assign {citizen_role:$(citizen_role)}
+$function dark_civilization:town_core/entities/player_entries/assign {role:$(citizen_role)}
 
 # Extra tag for requests
-execute if score @s dark_civilization.citizen_role matches 2 run function dark_civilization:town_core/entities/player_entries/helper/request
+execute if score @s dark_civilization.citizen_role matches 2 run scoreboard players set @s dark_real_time_clock.days -1
 
 # Save Username to CustomName
 $execute as @p[scores={dark_player.player_id=$(player_id)}] run function dark_player:utils/username/by_selector

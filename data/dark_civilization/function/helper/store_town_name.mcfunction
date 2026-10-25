@@ -1,2 +1,3 @@
+# RUN AS TOWN CORE
 execute if data entity @s CustomName run data modify storage temp town_name set from entity @s CustomName
 execute unless data storage temp town_name run data modify storage temp town_name set value "this town"

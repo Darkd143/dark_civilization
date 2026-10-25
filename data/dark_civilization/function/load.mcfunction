@@ -4,6 +4,7 @@ scoreboard objectives add dark_civilization.core_level dummy
 scoreboard objectives add dark_civilization.core_range dummy
 scoreboard objectives add dark_civilization.citizen_role dummy
 scoreboard objectives add dark_civilization.temp dummy
+scoreboard objectives add dark_civilization.last_menu dummy
 
 # triggers
 scoreboard objectives add dark_civilization.toggle_opt_in trigger
