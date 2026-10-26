@@ -1,0 +1,1 @@
+scoreboard players reset @s dark_civilization.citizen_role

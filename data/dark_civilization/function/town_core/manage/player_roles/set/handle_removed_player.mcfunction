@@ -1,0 +1,1 @@
+execute if score @p[tag=dark_civilization.identified_player] dark_civilization.citizen_role matches 2 run return run function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Civilization",message:"Your application has been rejected"}

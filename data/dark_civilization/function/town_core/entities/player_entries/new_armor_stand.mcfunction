@@ -16,5 +16,3 @@ execute as @n[distance=..10,tag=dark_civilization.new_player_entry,type=minecraf
 data remove storage temp player_id
 data remove storage temp citizen_role
 data remove storage temp town_core_id
-
-# TODO: Apply citizen roles to players upon creation. Somewhere
