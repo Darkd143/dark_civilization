@@ -3,7 +3,7 @@ function dark_civilization:triggers/citizen_management/manage/shared/store_entry
 
 # Show Warning Dialog
 execute if score @p[tag=dark_civilization.identified_player] dark_civilization.assign_new_mayor matches 1.. run function dark_civilization:triggers/citizen_management/assign_new_mayor/display/main
-execute if score @p[tag=dark_civilization.identified_player] dark_civilization.assign_new_mayor matches ..-1 run function dark_civilization:triggers/citizen_management/assign_new_mayor/core_functionality/apply with storage temp
+execute if score @p[tag=dark_civilization.identified_player] dark_civilization.assign_new_mayor matches ..-1 run function dark_civilization:triggers/citizen_management/assign_new_mayor/core_functionality/apply
 
 # Cleanup
 data remove storage temp player_name

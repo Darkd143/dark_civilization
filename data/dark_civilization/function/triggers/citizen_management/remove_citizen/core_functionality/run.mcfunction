@@ -10,7 +10,7 @@ function dark_civilization:triggers/citizen_management/manage/shared/store_entry
 
 # Show Warning Dialog
 execute if score @p[tag=dark_civilization.identified_player] dark_civilization.remove_citizen matches 1.. run function dark_civilization:triggers/citizen_management/remove_citizen/display/main
-execute if score @p[tag=dark_civilization.identified_player] dark_civilization.remove_citizen matches ..-1 run function dark_civilization:triggers/citizen_management/remove_citizen/core_functionality/apply with storage temp
+execute if score @p[tag=dark_civilization.identified_player] dark_civilization.remove_citizen matches ..-1 run function dark_civilization:town_core/entities/player_entries/assign {role:-1}
 
 # Cleanup
 data remove storage temp player_name
