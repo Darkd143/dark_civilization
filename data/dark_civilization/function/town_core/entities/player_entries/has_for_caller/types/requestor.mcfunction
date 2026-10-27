@@ -7,4 +7,4 @@ function dark_civilization:town_core/entities/player_entries/has_for_caller/setu
 function dark_civilization:town_core/entities/player_entries/has_for_caller/macro with storage temp
 
 # Determine Result
-return run function dark_civilization:town_core/entities/player_entries/has_for_caller/teardown
+return run function dark_civilization:town_core/entities/player_entries/has_for_caller/teardown with storage temp
