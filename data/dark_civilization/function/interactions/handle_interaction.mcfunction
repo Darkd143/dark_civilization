@@ -16,8 +16,4 @@ tag @s add dark_civilization.identified_interaction
 # Determine Interaction Type
 execute unless function dark_civilization:interactions/run_interaction_type run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: Failed to find a valid command for the identified interaction."}
 
-# Remove tag from interaction
-tag @s remove dark_civilization.identified_interaction
-
-# Remove tags from players
-tag @a[tag=dark_civilization.identified_player] remove dark_civilization.identified_player
+function dark_civilization:triggers/manage/shared/remove_all_identified_tags
