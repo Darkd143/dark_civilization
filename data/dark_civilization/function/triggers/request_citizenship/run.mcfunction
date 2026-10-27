@@ -22,6 +22,3 @@ execute if function dark_civilization:helper/is_banned run return run function d
 tag @s add dark_civilization.identified_player
 execute as @n[tag=dark_civilization.identified_interaction,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:town_core/manage/request_citizenship/main
 tag @s remove dark_civilization.identified_player
-
-# Cleanup
-tag @e[tag=dark_civilization.identified_interaction,type=minecraft:interaction] remove dark_civilization.identified_interaction

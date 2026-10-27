@@ -13,7 +13,7 @@ execute unless function dark_civilization:town_core/helper/town_core_in_player_r
 
 scoreboard players reset @s dark_economy.cost
 
-# Request Citizenship
+# Run as town core
 tag @s add dark_civilization.identified_player
 execute as @n[tag=dark_civilization.identified_interaction,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:triggers/citizen_management/accept_citizen_request/core_functionality/main
 tag @s remove dark_civilization.identified_player

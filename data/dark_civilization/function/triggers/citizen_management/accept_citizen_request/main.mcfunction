@@ -1,4 +1,7 @@
 function dark_civilization:triggers/citizen_management/accept_citizen_request/run
 
+# Reset Tags
+function dark_civilization:triggers/manage/shared/remove_all_identified_tags
+
 # Reset Trigger
 function dark_civilization:triggers/citizen_management/accept_citizen_request/enable
