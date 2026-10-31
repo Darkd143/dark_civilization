@@ -11,12 +11,13 @@ execute at @s as @n[distance=..3,tag=dark_civilization.town_core,type=minecraft:
 # Output message
 function dark_civilization:town_core/manage/player_roles/set/messages with storage temp
 
-# Applying the town core id to the player
-scoreboard players operation @p[tag=dark_civilization.identified_player] dark_civilization.town_core_id = @s dark_civilization.town_core_id
-
-# Assign role to player
-$execute as @p[tag=dark_civilization.identified_player] run scoreboard players set @s dark_civilization.citizen_role $(role)
-
 # Cleanup
 data remove storage temp town_name
 data remove storage temp player_id
+
+# Updating Player Scores
+$execute unless score @s dark_civilization.citizen_role matches -1..1 run function dark_civilization:town_core/manage/player_roles/set/update_player {role:$(role)}
+execute if score @s dark_civilization.citizen_role matches -1..1 as @p[tag=dark_civilization.identified_player] run function dark_civilization:town_core/manage/player_roles/reset/scores
+
+# Remove Entity
+execute as @s[tag=dark_civilization.staged_for_removal] run function dark_civilization:town_core/entities/player_entries/remove
