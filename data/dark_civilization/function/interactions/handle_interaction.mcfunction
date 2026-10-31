@@ -11,6 +11,6 @@ execute as @p[tag=dark_civilization.identified_player] unless function dark_civi
 execute unless entity @p[distance=..10,tag=dark_civilization.identified_player] as @a run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error! Failed to find an identified player for an interaction."}
 
 # Determine Interaction Type
-execute unless function dark_civilization:interactions/run_interaction_type run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: Failed to find a valid command for the identified interaction."}
+execute at @s unless function dark_civilization:interactions/run_interaction_type run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: Failed to find a valid command for the identified interaction."}
 
 function dark_civilization:triggers/manage/shared/remove_all_identified_tags
