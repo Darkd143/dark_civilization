@@ -1,7 +1,7 @@
 # RUN THIS FILE AS THE PLAYER
 
 # Setup storage
-function dark_civilization:town_core/entities/player_entries/has_for_caller/setup {roles:2}
+function dark_civilization:town_core/entities/player_entries/has_for_caller/setup {role:2}
 
 # Run Function
 return run function dark_civilization:town_core/entities/player_entries/has_for_caller/macro with storage temp
