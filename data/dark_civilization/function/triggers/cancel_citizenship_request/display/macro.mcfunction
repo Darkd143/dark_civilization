@@ -2,7 +2,7 @@
 # - town_name (string): The name of the town
 
 # Set up storage
-data merge storage dialog_temp {title:"Dark Civilization - Cancel Citizenship Request",color:"white",no:{"label":"Cancel"},message:"Cancel your citizenship request to $(town_name)?",yes:{ \
+$data merge storage dialog_temp {title:"Dark Civilization - Cancel Citizenship Request",color:"white",no:{"label":"Cancel"},message:"Cancel your citizenship request to $(town_name)?",yes:{ \
     "label": "Confirm", \
     "tooltip": "Cancel request to $(town_name)", \
     "action": { \

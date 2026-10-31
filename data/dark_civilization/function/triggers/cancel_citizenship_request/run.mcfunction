@@ -9,9 +9,7 @@ execute unless function dark_civilization:helper/has_requested_citizenship run r
 execute unless score @s dark_civilization.cancel_citizenship_request matches 2 run return run function dark_civilization:triggers/cancel_citizenship_request/display/main
 
 # Identify town core
-execute store result storage temp town_core_id int 1 run scoreboard players get @s dark_civilization.temp
-function dark_civilization:town_core/entities/identify/main with storage temp
-data remove storage temp town_core_id
+execute as @e[tag=dark_civilization.town_core,type=minecraft:interaction] if score @s dark_civilization.town_core_id = @p[tag=dark_civilization.identified_player] dark_civilization.town_core_id run tag @s add dark_civilization.identified_town_core
 
 # Run as town core
 execute as @n[tag=dark_civilization.identified_town_core,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:town_core/manage/cancel_citizenship_request/main

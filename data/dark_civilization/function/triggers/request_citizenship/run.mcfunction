@@ -1,6 +1,7 @@
 # Permission Denied
 execute unless function dark_civilization:opt_in/is_opt_in run return run function dark_civilization:triggers/manage/permissions/permission_denied {trigger_name:"request_citizenship"}
 
+tag @s add dark_civilization.identified_player
 # Player is already a member of a town
 execute if function dark_civilization:helper/is_citizen_of_any_town run return run function dark_civilization:town_core/interact/different_town_citizen
 
@@ -19,6 +20,4 @@ execute unless function dark_civilization:town_core/helper/town_core_in_player_r
 execute if function dark_civilization:helper/is_banned run return run function dark_civilization:triggers/request_citizenship/banned
 
 # Request Citizenship
-tag @s add dark_civilization.identified_player
 execute as @n[tag=dark_civilization.identified_town_core,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:town_core/manage/request_citizenship/main
-tag @s remove dark_civilization.identified_player
