@@ -1,1 +1,2 @@
 kill @s
+execute as @p[tag=dark_civilization.identified_player] if score @s dark_civilization.town_core_id = @n[distance=..3,tag=dark_civilization.identified_town_core,type=minecraft:interaction] dark_civilization.town_core_id run scoreboard players reset @s dark_civilization.town_core_id
