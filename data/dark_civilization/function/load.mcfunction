@@ -18,7 +18,6 @@ scoreboard objectives add dark_civilization.revoke_citizenship trigger
 
 scoreboard objectives add dark_civilization.view_town_citizen_list trigger
 
-# TODO
 scoreboard objectives add dark_civilization.accept_citizen_request trigger
 scoreboard objectives add dark_civilization.ban_citizen trigger
 scoreboard objectives add dark_civilization.remove_citizen trigger
