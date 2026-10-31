@@ -27,4 +27,4 @@ execute if score @s dark_civilization.view_town_citizen_list matches 2 run score
 execute if score @s dark_civilization.view_town_citizen_list matches 3 run scoreboard players reset @s dark_civilization.last_menu
 
 # Cleanup
-tag @e[tag=dark_civilization.identified_interaction,type=minecraft:interaction] remove dark_civilization.identified_interaction
+tag @e[tag=dark_civilization.identified_town_core,type=minecraft:interaction] remove dark_civilization.identified_town_core

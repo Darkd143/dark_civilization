@@ -14,4 +14,4 @@ function dark_civilization:town_core/entities/identify/main with storage temp
 data remove storage temp town_core_id
 
 # Run as town core
-execute as @n[tag=dark_civilization.identified_interaction,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:town_core/manage/cancel_citizenship_request/main
+execute as @n[tag=dark_civilization.identified_town_core,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:town_core/manage/cancel_citizenship_request/main

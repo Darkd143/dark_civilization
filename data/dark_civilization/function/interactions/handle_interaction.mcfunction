@@ -10,9 +10,6 @@ execute as @p[tag=dark_civilization.identified_player] unless function dark_civi
 # Target is within 10 blocks
 execute unless entity @p[distance=..10,tag=dark_civilization.identified_player] as @a run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error! Failed to find an identified player for an interaction."}
 
-# Tag interaction
-tag @s add dark_civilization.identified_interaction
-
 # Determine Interaction Type
 execute unless function dark_civilization:interactions/run_interaction_type run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: Failed to find a valid command for the identified interaction."}
 

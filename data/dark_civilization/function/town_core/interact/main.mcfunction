@@ -1,3 +1,5 @@
+tag @s add dark_civilization.identified_town_core
+
 # if Player is Banned
 execute if function dark_civilization:helper/is_banned run return run function dark_civilization:town_core/interact/banned
 
@@ -11,4 +13,4 @@ execute if function dark_civilization:helper/is_citizen_of_any_town run return r
 execute if function dark_civilization:helper/has_requested_citizenship run return run function dark_civilization:town_core/interact/already_requested_citizenship_somewhere
 
 # If Player is not a Citizen of a Town
-function dark_civilization:town_core/interact/non_citizen/main
+function dark_civilization:town_core/interact/non_citizen/run

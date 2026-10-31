@@ -15,7 +15,7 @@ scoreboard players reset @s dark_economy.cost
 
 # Request Citizenship
 tag @s add dark_civilization.identified_player
-execute as @n[tag=dark_civilization.identified_interaction,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/core_functionality/main
+execute as @n[tag=dark_civilization.identified_town_core,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:triggers/citizen_management/apply_deputy_mayor_role/core_functionality/main
 tag @s remove dark_civilization.identified_player
 tag @e[tag=dark_civilization.other_identified_player_entry] remove dark_civilization.other_identified_player_entry
 
@@ -24,4 +24,4 @@ execute unless score @s dark_economy.cost matches 1 run function dark_civilizati
 scoreboard players reset @s dark_economy.cost
 
 # Cleanup
-tag @e[tag=dark_civilization.identified_interaction,type=minecraft:interaction] remove dark_civilization.identified_interaction
+tag @e[tag=dark_civilization.identified_town_core,type=minecraft:interaction] remove dark_civilization.identified_town_core

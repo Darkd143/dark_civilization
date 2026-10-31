@@ -2,9 +2,6 @@
 # Parameters:
 # - role (int): The role of the citizen (-1,1-5)
 
-# Same Rule Applied
-execute if score @s dark_civilization.citizen_role = @p[tag=dark_civilization.identified_player] dark_civilization.citizen_role run return 1
-
 # Store town name
 execute at @s as @n[distance=..3,tag=dark_civilization.town_core,type=minecraft:interaction] run function dark_civilization:helper/store_town_name
 
