@@ -2,7 +2,7 @@
 execute unless function dark_civilization:opt_in/is_opt_in run return run function dark_civilization:triggers/manage/permissions/permission_denied {trigger_name:"view_town_citizen_list"}
 
 # Player is not a citizen of any town
-execute unless function dark_civilization:helper/is_citizen_of_any_town run return run function dark_player:utils/tellraw/dp_msg {dp_name:"Dark Civilization",message:"Error: You aren't a citizen of a town. You don't have access to this command."}
+execute unless function dark_civilization:helper/is_citizen_of_any_town run return run function dark_player:utils/tellraw/dp_err {dp_name:"Dark Civilization",message:"Error: You aren't a citizen of a town. You don't have access to this command."}
 
 # Identify Town Core
 execute store result storage temp town_core_id int 1 run scoreboard players get @s dark_civilization.town_core_id

@@ -11,7 +11,7 @@ $data merge storage dialog_temp {title:"$(town_name) Town Core Menu",exit_action
     "tooltip": "view the list of $(town_name) citizens", \
     "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_economy.view_town_citizens set 1" \
+        "command": "/trigger dark_civilization.view_town_citizen_list set 1" \
     } \
 }]}
 
@@ -21,7 +21,7 @@ execute if function dark_civilization:helper/permissions/can_manage_citizen_requ
     "tooltip": "manage $(town_name) citizenship requests", \
     "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_economy.view_town_citizens set 2" \
+        "command": "/trigger dark_civilization.view_town_citizen_list set 2" \
     } \
 }
 
@@ -31,7 +31,7 @@ execute if function dark_civilization:helper/permissions/can_view_manage_players
     "tooltip": "manage $(town_name) citizens", \
     "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_economy.view_town_citizens set 3" \
+        "command": "/trigger dark_civilization.view_town_citizen_list set 3" \
     } \
 }
 

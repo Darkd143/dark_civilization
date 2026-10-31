@@ -15,3 +15,4 @@ execute as @p[tag=dark_civilization.identified_player] run function dark_player:
 # Cleanup storage
 data remove storage dialog_temp title
 data remove storage dialog_temp body
+data remove storage dialog_temp exit_action
