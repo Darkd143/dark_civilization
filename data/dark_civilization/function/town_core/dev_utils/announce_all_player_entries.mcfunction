@@ -1,0 +1,3 @@
+tag @s add dark_civilization.identified_player
+execute at @s as @e[distance=..3,tag=dark_civilization.town_core_player_entry,type=minecraft:armor_stand] run tellraw @p[tag=dark_civilization.identified_player] [{"text":"Name: "},{selector:"@s"},{"text":" | ID: "},{score:{name:"@s",objective:"dark_player.player_id"}},{"text":" | Role: "},{score:{name:"@s",objective:"dark_civilization.citizen_role"}}]
+tag @s remove dark_civilization.identified_player

@@ -1,3 +1,5 @@
+tag @s add dark_civilization.identified_player
+
 # Permission Denied
 execute unless function dark_civilization:opt_in/is_opt_in run return run function dark_civilization:triggers/citizen_management/manage/permissions/permission_denied {trigger_name:"remove_citizen"}
 
@@ -14,9 +16,7 @@ execute unless function dark_civilization:town_core/helper/town_core_in_player_r
 scoreboard players reset @s dark_economy.cost
 
 # Request Citizenship
-tag @s add dark_civilization.identified_player
-execute as @n[tag=dark_civilization.identified_town_core,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:triggers/citizen_management/remove_citizen/core_functionality/main
-tag @s remove dark_civilization.identified_player
+execute as @n[distance=..10,tag=dark_civilization.identified_town_core,tag=dark_civilization.town_core,type=minecraft:interaction] at @s run function dark_civilization:triggers/citizen_management/remove_citizen/core_functionality/main
 tag @e[tag=dark_civilization.other_identified_player_entry] remove dark_civilization.other_identified_player_entry
 
 # Back to menu
