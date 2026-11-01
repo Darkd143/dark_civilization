@@ -10,5 +10,7 @@ execute unless function dark_civilization:triggers/citizen_management/manage/sha
 # Run functionality as the player entry
 execute as @n[distance=..3,tag=dark_civilization.town_core_player_entry,tag=dark_civilization.identified_player_entry,type=minecraft:armor_stand] run function dark_civilization:triggers/citizen_management/remove_citizen/core_functionality/run
 
+# TODO - Player that is running the trigger is getting themselves removed
+
 # Cleanup
 tag @e[tag=dark_civilization.identified_player_entry] remove dark_civilization.identified_player_entry

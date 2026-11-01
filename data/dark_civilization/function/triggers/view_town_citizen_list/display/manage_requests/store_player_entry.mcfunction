@@ -23,7 +23,7 @@ $data modify storage dialog_temp actions append value { \
     "width": 90, \
     "action": { \
         "type": "minecraft:run_command", \
-        "command": "/trigger dark_civilization.reject_citizen_request set $(player_id)" \
+        "command": "/trigger dark_civilization.remove_citizen set $(player_id)" \
     } \
 }
 
